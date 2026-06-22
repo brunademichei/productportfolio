@@ -438,6 +438,13 @@ a { color: inherit; }
 .gallery--quad { grid-template-columns: 1fr 1fr; }
 .gallery--quad .gphoto { aspect-ratio: 3 / 2; }
 
+.gallery--stack { grid-template-columns: 1fr 1fr; }
+.gallery--stack .gphoto:first-child { grid-column: 1 / 3; aspect-ratio: 16 / 9; }
+.gallery--stack .gphoto:not(:first-child) { aspect-ratio: 4 / 3; }
+
+.gallery--duo { grid-template-columns: 1fr; }
+.gallery--duo .gphoto { aspect-ratio: 16 / 10; }
+
 /* ===== Expertise cards ===== */
 .card {
   background: var(--surface);
