@@ -374,37 +374,69 @@ a { color: inherit; }
 }
 .proj__desc { color: var(--text-soft); font-size: 1rem; }
 
-/* ===== Creative events ===== */
-.event {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.event:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-.event__media {
+/* ===== Creative events (feature blocks + photo collages) ===== */
+.events { display: flex; flex-direction: column; gap: clamp(3rem, 7vw, 6rem); }
+.feature {
   display: grid;
-  place-items: center;
-  aspect-ratio: 16 / 10;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: center;
 }
-.event__media--a { background: var(--c-d); }
-.event__media--b { background: var(--c-b); }
-.event__media--c { background: var(--c-e); }
-.event__media img { width: 100%; height: 100%; object-fit: cover; }
-.event__body { padding: 1.5rem; }
-.event__cat {
+.feature--reverse .feature__gallery { order: 2; }
+.feature__cat {
   display: block;
   color: var(--accent);
   font-weight: 700;
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.55rem;
 }
-.event__body h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; margin-bottom: 0.45rem; letter-spacing: -0.01em; }
-.event__body p { color: var(--text-soft); font-size: 0.97rem; }
+.feature__text h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.9rem;
+}
+.feature__text p { color: var(--text-soft); font-size: 1.02rem; }
+.feature__text p + p { margin-top: 0.9rem; }
+.feature__link {
+  display: inline-block;
+  margin-top: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+.feature__link:hover { text-decoration: underline; }
+
+/* Photo collages */
+.feature__gallery { display: grid; gap: 0.9rem; }
+.gphoto {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gphoto img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.gphoto:hover { transform: translateY(-4px) rotate(-1deg); box-shadow: var(--shadow-lg); }
+.gphoto:hover img { transform: scale(1.06); }
+
+.gallery--single .gphoto { aspect-ratio: 16 / 10; }
+
+.gallery--trio {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  aspect-ratio: 1 / 1;
+}
+.gphoto--a { grid-column: 1; grid-row: 1; }
+.gphoto--b { grid-column: 1; grid-row: 2; }
+.gphoto--c { grid-column: 2; grid-row: 1 / 3; }
+
+.gallery--quad { grid-template-columns: 1fr 1fr; }
+.gallery--quad .gphoto { aspect-ratio: 3 / 2; }
 
 /* ===== Expertise cards ===== */
 .card {
@@ -555,4 +587,7 @@ a { color: inherit; }
   .nav__menu.is-open { transform: none; opacity: 1; pointer-events: auto; }
 
   .grid--work { grid-template-columns: 1fr; }
+
+  .feature { grid-template-columns: 1fr; gap: 1.5rem; }
+  .feature--reverse .feature__gallery { order: 0; }
 }
