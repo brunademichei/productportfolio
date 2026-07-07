@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Case study: usability research on the Work Tax Location payroll workflow, prototyped in Figma Make with an AI-assisted approach." />
   <meta name="author" content="Bruna Demichei Nobre" />
-  <title>Work Tax Location user research · Bruna Demichei Nobre</title>
+  <title>Work Tax Location User Research · Bruna Demichei Nobre</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✦&lt;/text&gt;&lt;/svg&gt;" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
@@ -30,10 +30,15 @@
       </button>
 
       <ul class="nav__menu" id="nav-menu">
-        <li><a href="index.html#work">Case studies</a></li>
-        <li><a href="index.html#events">Creative events</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#work" data-i18n="nav.work">Case studies</a></li>
+        <li><a href="index.html#events" data-i18n="nav.events">Creative events</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        <li>
+          <button class="lang-toggle" id="lang-toggle" aria-label="Mudar para português" title="Português / English">
+            <span class="lang-toggle__label" id="lang-toggle-label">PT</span>
+          </button>
+        </li>
         <li>
           <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle theme">
             <span class="theme-toggle__icon" aria-hidden="true">◑</span>
@@ -45,32 +50,32 @@
 
   <main id="main">
     <div class="case-wrap">
-      <a class="case-back" href="index.html#work">← All case studies</a>
+      <a class="case-back" href="index.html#work" data-i18n="case.back">← All case studies</a>
 
       <header class="case-hero reveal">
-        <span class="case-hero__cat">User research · AI-assisted prototyping</span>
-        <h1 class="case-hero__title">Work Tax Location user research</h1>
-        <p class="case-hero__lede">
+        <span class="case-hero__cat" data-i18n="wtl.cat">User research · AI-assisted prototyping</span>
+        <h1 class="case-hero__title" data-i18n="wtl.title">Work Tax Location User Research</h1>
+        <p class="case-hero__lede" data-i18n="wtl.lede">
           A usability study on a complex, multi-location payroll tax workflow, prototyped end-to-end in
           Figma Make, that surfaced a clear user need for comparative tax views.
         </p>
         <dl class="case-meta">
-          <div><dt>My role</dt><dd>UX Designer &amp; researcher</dd></div>
-          <div><dt>Method</dt><dd>Usability research (UserTesting)</dd></div>
-          <div><dt>Prototype</dt><dd>Figma Make (AI-assisted)</dd></div>
-          <div><dt>Focus</dt><dd>IA, interaction design, research</dd></div>
+          <div><dt data-i18n="meta.role">My role</dt><dd data-i18n="wtl.m.role">UX Designer &amp; researcher</dd></div>
+          <div><dt data-i18n="wtl.m.methodlbl">Method</dt><dd data-i18n="wtl.m.method">Usability research (UserTesting)</dd></div>
+          <div><dt data-i18n="wtl.m.protolbl">Prototype</dt><dd data-i18n="wtl.m.proto">Figma Make (AI-assisted)</dd></div>
+          <div><dt data-i18n="meta.focus">Focus</dt><dd data-i18n="wtl.m.focus">IA, interaction design, research</dd></div>
         </dl>
       </header>
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>Overview</h2>
-          <p>
+          <h2 data-i18n="wtl.ov.title">Overview</h2>
+          <p data-i18n="wtl.ov.p1">
             Using Figma Make, I created a low-fidelity prototype to support a usability research study run
             through UserTesting. The whole prototype was built with an AI-assisted (vibe coding) approach,
             including both the screen designs and the definition of the user tasks used during the study.
           </p>
-          <p>
+          <p data-i18n="wtl.ov.p2">
             The Work Tax Location feature is a complex payroll requirement: employee tax calculations vary
             depending on their work location. After a discovery session with LPMs, Development Leads, and
             Software Architects, I led usability research to better understand how users interact with this
@@ -81,8 +86,8 @@
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>The challenge</h2>
-          <p>
+          <h2 data-i18n="wtl.ch.title">The challenge</h2>
+          <p data-i18n="wtl.ch.p1">
             The hardest part was translating a highly complex backend payroll component into a simple,
             intuitive, usable interface. The Work Tax Location logic involves multiple variables that directly
             impact employee payroll calculations based on location, which makes the information difficult to
@@ -90,8 +95,8 @@
             architecture and user-centered interaction design, so critical data could be interpreted,
             compared, and trusted during everyday tasks.
           </p>
-          <h3>Research approach</h3>
-          <p>
+          <h3 data-i18n="wtl.ch.h3">Research approach</h3>
+          <p data-i18n="wtl.ch.p2">
             I also designed pre-task activities to capture user behavior and expectations before they
             interacted with the prototype, establishing a clearer baseline for analysis.
           </p>
@@ -100,8 +105,8 @@
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>The prototype</h2>
-          <p>
+          <h2 data-i18n="wtl.pr.title">The prototype</h2>
+          <p data-i18n="wtl.pr.p">
             The screens model an employee's payroll results and the tax detail behind them, with residence and
             work-location information, jurisdictions, and per-location allocations.
           </p>
@@ -113,7 +118,7 @@
               <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
               <div class="browser__viewport"><img src="assets/cases/wtl-results.jpg" alt="Payroll Results Viewer showing an employee's pay period with gross, deduction, and net pay" loading="lazy" /></div>
             </div>
-            <figcaption>Payroll Results Viewer: an employee's results with the supporting detail panel.</figcaption>
+            <figcaption data-i18n="wtl.pr.cap1">Payroll Results Viewer: an employee's results with the supporting detail panel.</figcaption>
           </figure>
 
           <figure class="shot reveal">
@@ -121,7 +126,7 @@
               <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
               <div class="browser__viewport"><img src="assets/cases/wtl-input.jpg" alt="Tax Input screen showing primary residence information, tax jurisdictions, and work locations" loading="lazy" /></div>
             </div>
-            <figcaption>Tax input: residence and work-location information with the relevant jurisdictions.</figcaption>
+            <figcaption data-i18n="wtl.pr.cap2">Tax input: residence and work-location information with the relevant jurisdictions.</figcaption>
           </figure>
 
           <figure class="shot reveal">
@@ -129,22 +134,235 @@
               <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
               <div class="browser__viewport"><img src="assets/cases/wtl-allocations.jpg" alt="Allocations for Connecticut, New Jersey, and New York work locations, each with Regular and Supplemental" loading="lazy" /></div>
             </div>
-            <figcaption>Per-location allocations across Connecticut, New Jersey, and New York.</figcaption>
+            <figcaption data-i18n="wtl.pr.cap3">Per-location allocations across Connecticut, New Jersey, and New York.</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>What we learned</h2>
+          <h2 data-i18n="wtl.rr.title">The research report</h2>
+          <p data-i18n="wtl.rr.p">
+            I synthesized the whole study in a FigJam research report: objectives and success
+            criteria, a participant overview, every participant answer, and the pain points,
+            delights, and suggestions that came out of the sessions. Here are the highlights.
+          </p>
+        </div>
+
+        <div class="board reveal" role="img" aria-label="FigJam user research report board for the SFPAY PRV Proration study, including timeline, summary, objectives, participants, findings, participant quotes, and takeaways.">
+          <div class="board__bar">
+            <span class="board__bar-title" data-i18n="wtl.board.title">SFPAY PRV · Proration — User research report</span>
+            <span class="board__bar-tools" aria-hidden="true">
+              <span class="board__tool"></span><span class="board__tool"></span><span class="board__tool"></span>
+            </span>
+          </div>
+
+          <div class="board__canvas">
+            <!-- Timeline -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="wtl.tl.head">Timeline &amp; key dates</h3>
+              <ol class="board__timeline">
+                <li><em>01</em><b data-i18n="wtl.tl.1">Planning</b><span data-i18n="wtl.tl.1d">May 2026</span></li>
+                <li><em>02</em><b data-i18n="wtl.tl.2">Recruitment</b><span data-i18n="wtl.tl.2d">June 2026</span></li>
+                <li><em>03</em><b data-i18n="wtl.tl.3">Testing sessions</b><span data-i18n="wtl.tl.3d">June 2026</span></li>
+                <li><em>04</em><b data-i18n="wtl.tl.4">Reporting &amp; handoff</b><span data-i18n="wtl.tl.4d">June 2026</span></li>
+              </ol>
+            </div>
+
+            <!-- Summary + objectives -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="wtl.so.head">Quick summary &amp; objectives</h3>
+              <div class="board__row">
+                <div class="note note--yellow">
+                  <span class="note__label" data-i18n="wtl.so.sumlbl">Quick summary</span>
+                  <span data-i18n="wtl.so.sum">This test evaluates how effectively the Payroll Results Viewer (PRV) handles the
+                  complexity of simultaneous multi-state withholding: whether users can understand how
+                  income is allocated across work locations and how tax credits are applied to the home
+                  state to prevent double taxation. We checked the usability of the PRV for confusion points.</span>
+                </div>
+                <div class="note note--purple">
+                  <span class="note__label" data-i18n="wtl.so.objlbl">Objectives</span>
+                  <ul>
+                    <li data-i18n="wtl.so.obj1">Identify friction points in the main navigation flow.</li>
+                    <li data-i18n="wtl.so.obj2">Assess understanding of critical concepts (taxable amounts, allocations).</li>
+                    <li data-i18n="wtl.so.obj3">Observe whether users complete validation tasks without assistance.</li>
+                    <li data-i18n="wtl.so.obj4">Check whether multi-level popovers give clear, progressive access to information.</li>
+                    <li data-i18n="wtl.so.obj5">Verify the message strip communicates the proration method (Calendar Days).</li>
+                  </ul>
+                </div>
+                <div class="note note--white">
+                  <span class="note__label" data-i18n="wtl.so.sclbl">Success criteria</span>
+                  <ul>
+                    <li data-i18n="wtl.so.sc1">&ge;80% success rate on key tasks</li>
+                    <li data-i18n="wtl.so.sc2">&le;1 critical error per user</li>
+                    <li data-i18n="wtl.so.sc3">Low dependence on support / moderation</li>
+                    <li data-i18n="wtl.so.sc4">Qualitative feedback showing clarity in understanding the calculations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Participants -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="wtl.pp.head">User profiles · 7 participants</h3>
+              <ul class="board__people">
+                <li class="person"><div class="person__top"><span class="person__avatar">1</span><span class="person__name">User 1</span></div><span class="person__role" data-i18n="wtl.pp.r1">Administrative · Director</span><span class="person__meta" data-i18n="wtl.pp.m1">Full-time · 51–200 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">2</span><span class="person__name">User 2</span></div><span class="person__role" data-i18n="wtl.pp.r2">Accounting · Manager</span><span class="person__meta" data-i18n="wtl.pp.m2">Full-time · 201–500 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">3</span><span class="person__name">User 3</span></div><span class="person__role" data-i18n="wtl.pp.r3">Administrative · Entry-level</span><span class="person__meta" data-i18n="wtl.pp.m3">Full-time · 10,001+ employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">4</span><span class="person__name">User 4</span></div><span class="person__role" data-i18n="wtl.pp.r4">Human Resources · Director</span><span class="person__meta" data-i18n="wtl.pp.m4">Full-time · 10,001+ employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">5</span><span class="person__name">User 5</span></div><span class="person__role" data-i18n="wtl.pp.r5">Human Resources · Manager</span><span class="person__meta" data-i18n="wtl.pp.m5">Full-time · 201–500 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">6</span><span class="person__name">User 6</span></div><span class="person__role" data-i18n="wtl.pp.r6">Human Resources · Entry-level</span><span class="person__meta" data-i18n="wtl.pp.m6">Full-time · 501–1000 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">7</span><span class="person__name">User 7</span></div><span class="person__role" data-i18n="wtl.pp.r7">Administrative · Senior</span><span class="person__meta" data-i18n="wtl.pp.m7">Full-time · 10,001+ employees</span></li>
+              </ul>
+            </div>
+
+            <!-- Findings -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="wtl.fi.head">Prototype results</h3>
+              <div class="board__cols">
+                <div class="board__col board__col--pain">
+                  <span class="board__col-title" data-i18n="wtl.fi.pain">Pain points</span>
+                  <div class="note note--pink" data-i18n-html="wtl.fi.pain1">
+                    <strong>Multi-level popover goes unexplored.</strong> Most users stopped at the
+                    top-level number and never dug into the proration details, a false sense of completion.
+                  </div>
+                  <div class="note note--pink" data-i18n-html="wtl.fi.pain2">
+                    <strong>Period comparison is broken.</strong> Users couldn't easily compare Jan vs.
+                    Feb because the layout doesn't support a side-by-side view. Some gave up; others were frustrated.
+                  </div>
+                </div>
+
+                <div class="board__col board__col--delight">
+                  <span class="board__col-title" data-i18n="wtl.fi.delight">Delights</span>
+                  <div class="note note--green" data-i18n-html="wtl.fi.del1">
+                    <strong>Layout builds confidence.</strong> Average self-rated understanding was high;
+                    even users who missed details felt capable. The visual structure is reassuring.
+                  </div>
+                  <div class="note note--green" data-i18n-html="wtl.fi.del2">
+                    <strong>Message strip for proration landed well.</strong> The majority noticed it and found it valuable.
+                  </div>
+                  <div class="note note--green" data-i18n-html="wtl.fi.del3">
+                    <strong>Allocation numbers were findable.</strong> 5 of 7 located both the NY allocation
+                    and the prorated amount, so the IA is discoverable at its core.
+                  </div>
+                </div>
+
+                <div class="board__col board__col--idea">
+                  <span class="board__col-title" data-i18n="wtl.fi.sugg">Suggestions</span>
+                  <div class="note note--blue" data-i18n-html="wtl.fi.sug1">
+                    <strong>Add a visual cue.</strong> A "See details" affordance so users know the top-level
+                    number is a doorway, not the full answer.
+                  </div>
+                  <div class="note note--blue" data-i18n-html="wtl.fi.sug2">
+                    <strong>Add a period comparison view.</strong> The strongest user desire. Even a simple
+                    side-by-side Jan/Feb diff or a "What changed?" summary would resolve most of this.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- User answers -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="wtl.qa.head">User answers &middot; 7 participants &times; 5 questions</h3>
+              <p class="board__verbatim" data-i18n="wtl.qa.verbatim">Participant answers are shown verbatim, in the original language of the session.</p>
+              <div class="qa">
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q1</span><p data-i18n="wtl.qa.q1">Locate the allocation amount for regular wages in the New York (NY) location. Then, identify the corresponding prorated amount. Were you able to find both values? Describe where you found them and how you interpreted them.</p></div>
+                  <div class="qa__answers">
+                    <div class="qa__a qa__a--empty"><span class="qa__user">U1</span><span class="qa__na" data-i18n="wtl.qa.na">No answer</span></div>
+                    <div class="qa__a"><span class="qa__user">U2</span>3.166,82 / 1.583,25</div>
+                    <div class="qa__a"><span class="qa__user">U3</span>I found them under the NY Work Location Allocation section. The amount allocated (~2k) is the percentage of the gross earning allocated to that location for tax purposes.</div>
+                    <div class="qa__a"><span class="qa__user">U4</span>The allocation was 50% to NY for the first pay period and 25% the second period. Meaning that fed taxes were paid at the NY rate for 50% of the period for the first check and 25% for the second check.</div>
+                    <div class="qa__a"><span class="qa__user">U5</span>NY work allocation has the regular wages has 4,750 then prorated to 1978.85 bacause the rest was earned in another state.</div>
+                    <div class="qa__a"><span class="qa__user">U6</span>Under NY Work Location Allocation - prorated amount is 1,978.85 and the regular wages base cumulation is 4,750. I interpret the NY amount to be prorated because he doesn’t live em NY but in CN.</div>
+                    <div class="qa__a"><span class="qa__user">U7</span>I clicked on calculations and selected the NY Allocation, then I selected regular and then I clicked on the amount on blue and it brought up the prorated amount.</div>
+                  </div>
+                  <div class="qa__note"><strong data-i18n="wtl.qa.rn">Researcher note</strong> <span data-i18n="wtl.qa.rn1">Users did not seem to fully grasp or explore the multi-level popover. They appeared satisfied with the overall number and, as a result, missed some crucial proration details.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q2</span><p data-i18n="wtl.qa.q2">Rate your understanding of the allocations calculation shown on the prototype.</p><span class="qa__avg">avg 4.0<small>/5</small></span></div>
+                  <div class="qa__answers">
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U1</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U2</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U3</span><span class="qa__rate">5 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U4</span><span class="qa__rate">3 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U5</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U6</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U7</span><span class="qa__rate">4 / 5</span></div>
+                  </div>
+                  <div class="qa__note"><strong data-i18n="wtl.qa.rn">Researcher note</strong> <span data-i18n="wtl.qa.rn2">Even though they didn’t fully explore the popovers, they still felt confident in their answer. The layout gave the user a sense of confidence.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q3</span><p data-i18n="wtl.qa.q3">Could you find why the total tax amount may have increased for the February period, in comparison to the January period?</p></div>
+                  <div class="qa__answers">
+                    <div class="qa__a"><span class="qa__user">U1</span>No, there’s a lot of data here and it is hard to decipher and determine the increase and it’s cause.</div>
+                    <div class="qa__a"><span class="qa__user">U2</span>For february, the NY allocation was added, and for January it was not.</div>
+                    <div class="qa__a"><span class="qa__user">U3</span>I can’t find the information specifically, but it could change based on the tax rates in the areas in which you are working.</div>
+                    <div class="qa__a"><span class="qa__user">U4</span>Because Jan work may not have been performed in all of these locations and thus the tax rate may be higher in Feb.</div>
+                    <div class="qa__a"><span class="qa__user">U5</span>The taxes are higher in the area he worked in feb compared to jan.</div>
+                    <div class="qa__a"><span class="qa__user">U6</span>In Jan according to what I saw he was working in NJ for the entire period 100% of the time. One jurisdiction means less taxes as opposed to owing taxes in multiple jurisdictions like in Feb.</div>
+                    <div class="qa__a"><span class="qa__user">U7</span>The reason it was increased was because NY was added on the Feb payslip.</div>
+                  </div>
+                  <div class="qa__note"><strong data-i18n="wtl.qa.rn">Researcher note</strong> <span data-i18n="wtl.qa.rn3">This was the most divisive question. Some users couldn’t fully understand the overall layout and therefore did not explore the multiple pages, resulting in frustration. They expressed a desire for an easier way to compare periods.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q4</span><p data-i18n="wtl.qa.q4">How confident are you in validating the payroll results based on this screen?</p><span class="qa__avg">avg 4.0<small>/5</small></span></div>
+                  <div class="qa__answers">
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U1</span><span class="qa__rate">5 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U2</span><span class="qa__rate">5 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U3</span><span class="qa__rate">3 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U4</span><span class="qa__rate">3 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U5</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U6</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U7</span><span class="qa__rate">4 / 5</span></div>
+                  </div>
+                  <div class="qa__note"><strong data-i18n="wtl.qa.rn">Researcher note</strong> <span data-i18n="wtl.qa.rn4">Good confidence rating from the users.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q5</span><p data-i18n="wtl.qa.q5">Review the explanation about proration. In your own words, explain what it means and how it applies in this scenario specifically.</p></div>
+                  <div class="qa__answers">
+                    <div class="qa__a"><span class="qa__user">U1</span>Money need to be withheld and prorated based on state law for the state income tax for where the individual lives and works. Did not read the message strip to get the answer*</div>
+                    <div class="qa__a"><span class="qa__user">U2</span>Proration goes based off calendar days and is an options that can tax earnings.</div>
+                    <div class="qa__a"><span class="qa__user">U3</span>It means that earning and deductions are prorated and allocated based on percentage of pay period and possible multiple locations.</div>
+                    <div class="qa__a"><span class="qa__user">U4</span>For the taxes owed in that period 50% of the taxable amount will be at the NY rate and same for NJ. For the following period the split is 25% and 75%</div>
+                    <div class="qa__a"><span class="qa__user">U5</span>that the days they worked are adjusted by the calendar days on the pay period and where they worked.</div>
+                    <div class="qa__a"><span class="qa__user">U6</span>It means the taxes are applied to the number of days you are in a jurisdiction. Going by number of calendar days, the proration goes up with the more days you are in a place.</div>
+                    <div class="qa__a"><span class="qa__user">U7</span>I don’t think it applies to what the issue is but from what it is saying I think it has a set amount it takes until it does its final deduction.</div>
+                  </div>
+                  <div class="qa__note"><strong data-i18n="wtl.qa.rn">Researcher note</strong> <span data-i18n="wtl.qa.rn5">The majority of users noticed the message strip and found it valuable. It was a good implementation.</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Takeaways -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="wtl.ta.head">Takeaways</h3>
+              <div class="note note--white" data-i18n="wtl.ta.body">
+                The prototype performed well overall: users felt confident navigating the screen and
+                responded positively to the proration message strip and the general layout. Most located
+                the key allocation numbers without guidance, so the information architecture is solid at its
+                core. The two clearest gaps are depth and comparison: users stopped at surface-level numbers
+                without realizing more detail lived in the popovers, and they couldn't compare January vs.
+                February because the layout doesn't support a cross-period view. The main opportunities
+                going forward: signal popover depth more explicitly and introduce a period comparison, even a
+                lightweight "what changed" view would address the most recurring need.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2 data-i18n="wtl.wl.title">What we learned</h2>
           <div class="callout">
-            <p>
+            <p data-i18n-html="wtl.wl.callout">
               <strong>Users expressed a strong need for comparative views of payroll and tax differences
               across locations.</strong> Seeing those differences side by side would significantly improve
               clarity, decision-making, and trust in the system.
             </p>
           </div>
-          <p>
+          <p data-i18n="wtl.wl.p">
             This finding gave the team a research-backed direction for the feature and validated an approach
             for presenting complex, location-based tax data in a way users can actually interpret and trust.
           </p>
@@ -152,10 +370,10 @@
       </section>
 
       <section class="case-cta reveal">
-        <h2 class="case-cta__title">Want to see more?</h2>
+        <h2 class="case-cta__title" data-i18n="cta.more">Want to see more?</h2>
         <div class="contact__actions">
-          <a class="btn btn--primary" href="case-minha-jornada.html">Next case study →</a>
-          <a class="btn btn--ghost" href="index.html#work">All case studies</a>
+          <a class="btn btn--primary" href="case-minha-jornada.html" data-i18n="cta.next">Next case study →</a>
+          <a class="btn btn--ghost" href="index.html#work" data-i18n="cta.all">All case studies</a>
         </div>
       </section>
     </div>
@@ -164,11 +382,121 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p>© <span id="year"></span> Bruna Demichei Nobre</p>
-      <p class="site-footer__meta">UX Designer · Designed &amp; built with accessibility in mind.</p>
-      <a href="#top" class="site-footer__top">Back to top ↑</a>
+      <p class="site-footer__meta" data-i18n="footer.meta">UX Designer · Designed &amp; built with accessibility in mind.</p>
+      <a href="#top" class="site-footer__top" data-i18n="footer.top">Back to top ↑</a>
     </div>
   </footer>
 
+  <script>
+    window.PT = {
+      "skip": "Pular para o conteúdo",
+      "nav.work": "Cases",
+      "nav.events": "Eventos criativos",
+      "nav.about": "Sobre",
+      "nav.contact": "Contato",
+      "case.back": "← Todos os cases",
+      "meta.role": "Meu papel",
+      "meta.focus": "Foco",
+      "cta.more": "Quer ver mais?",
+      "cta.next": "Próximo case →",
+      "cta.all": "Todos os cases",
+      "footer.meta": "UX Designer · Desenhado &amp; construído com acessibilidade em mente.",
+      "footer.top": "Voltar ao topo ↑",
+
+      "wtl.cat": "Pesquisa com usuários · Prototipagem com IA",
+      "wtl.title": "Pesquisa de Usuário: Work Tax Location",
+      "wtl.lede": "Um estudo de usabilidade sobre um fluxo tributário de folha complexo, com múltiplas localizações, prototipado de ponta a ponta no Figma Make, que revelou uma clara necessidade dos usuários por visões comparativas de impostos.",
+      "wtl.m.role": "UX Designer &amp; pesquisadora",
+      "wtl.m.methodlbl": "Método",
+      "wtl.m.method": "Pesquisa de usabilidade (UserTesting)",
+      "wtl.m.protolbl": "Protótipo",
+      "wtl.m.proto": "Figma Make (assistido por IA)",
+      "wtl.m.focus": "AI, design de interação, pesquisa",
+
+      "wtl.ov.title": "Visão geral",
+      "wtl.ov.p1": "Usando o Figma Make, criei um protótipo de baixa fidelidade para apoiar um estudo de usabilidade conduzido pelo UserTesting. Todo o protótipo foi construído com uma abordagem assistida por IA (vibe coding), incluindo tanto o design das telas quanto a definição das tarefas usadas durante o estudo.",
+      "wtl.ov.p2": "O recurso Work Tax Location é um requisito complexo de folha de pagamento: o cálculo de impostos do funcionário varia conforme sua localização de trabalho. Após uma sessão de discovery com LPMs, Development Leads e Software Architects, conduzi a pesquisa de usabilidade para entender melhor como os usuários interagem com esse tipo de fluxo na prática.",
+
+      "wtl.ch.title": "O desafio",
+      "wtl.ch.p1": "A parte mais difícil foi traduzir um componente de folha de pagamento altamente complexo do backend em uma interface simples, intuitiva e usável. A lógica de Work Tax Location envolve múltiplas variáveis que impactam diretamente os cálculos de folha baseados em localização, o que torna a informação difícil de entender e validar. Meu papel focou em reduzir essa complexidade por meio de uma arquitetura da informação clara e um design de interação centrado no usuário, para que dados críticos pudessem ser interpretados, comparados e confiáveis nas tarefas do dia a dia.",
+      "wtl.ch.h3": "Abordagem de pesquisa",
+      "wtl.ch.p2": "Também desenhei atividades de pré-tarefa para capturar o comportamento e as expectativas dos usuários antes de interagirem com o protótipo, estabelecendo uma linha de base mais clara para a análise.",
+
+      "wtl.pr.title": "O protótipo",
+      "wtl.pr.p": "As telas modelam os resultados de folha de um funcionário e o detalhe tributário por trás deles, com informações de residência e localização de trabalho, jurisdições e alocações por localização.",
+      "wtl.pr.cap1": "Payroll Results Viewer: os resultados de um funcionário com o painel de detalhe de apoio.",
+      "wtl.pr.cap2": "Entrada de impostos: informações de residência e localização de trabalho com as jurisdições relevantes.",
+      "wtl.pr.cap3": "Alocações por localização em Connecticut, New Jersey e New York.",
+
+      "wtl.rr.title": "O relatório de pesquisa",
+      "wtl.rr.p": "Sintetizei todo o estudo em um relatório de pesquisa no FigJam: objetivos e critérios de sucesso, uma visão geral dos participantes, cada resposta dos participantes e os pain points, delights e sugestões que surgiram nas sessões. Aqui estão os destaques.",
+      "wtl.board.title": "SFPAY PRV · Proration — Relatório de pesquisa com usuários",
+
+      "wtl.tl.head": "Cronograma &amp; datas-chave",
+      "wtl.tl.1": "Planejamento", "wtl.tl.1d": "Maio 2026",
+      "wtl.tl.2": "Recrutamento", "wtl.tl.2d": "Junho 2026",
+      "wtl.tl.3": "Sessões de teste", "wtl.tl.3d": "Junho 2026",
+      "wtl.tl.4": "Relatório &amp; handoff", "wtl.tl.4d": "Junho 2026",
+
+      "wtl.so.head": "Resumo rápido &amp; objetivos",
+      "wtl.so.sumlbl": "Resumo rápido",
+      "wtl.so.sum": "Este teste avalia com que eficácia o Payroll Results Viewer (PRV) lida com a complexidade da retenção simultânea em múltiplos estados: se os usuários conseguem entender como a renda é alocada entre localizações de trabalho e como créditos tributários são aplicados ao estado de residência para evitar dupla tributação. Verificamos a usabilidade do PRV em busca de pontos de confusão.",
+      "wtl.so.objlbl": "Objetivos",
+      "wtl.so.obj1": "Identificar pontos de fricção no fluxo principal de navegação.",
+      "wtl.so.obj2": "Avaliar o entendimento de conceitos críticos (valores tributáveis, alocações).",
+      "wtl.so.obj3": "Observar se os usuários concluem tarefas de validação sem ajuda.",
+      "wtl.so.obj4": "Verificar se os popovers multinível dão acesso claro e progressivo à informação.",
+      "wtl.so.obj5": "Confirmar se a faixa de mensagem comunica o método de proração (Dias de Calendário).",
+      "wtl.so.sclbl": "Critérios de sucesso",
+      "wtl.so.sc1": "&ge;80% de taxa de sucesso nas tarefas principais",
+      "wtl.so.sc2": "&le;1 erro crítico por usuário",
+      "wtl.so.sc3": "Baixa dependência de suporte / moderação",
+      "wtl.so.sc4": "Feedback qualitativo mostrando clareza no entendimento dos cálculos",
+
+      "wtl.pp.head": "Perfis de usuário · 7 participantes",
+      "wtl.pp.r1": "Administrativo · Diretor(a)", "wtl.pp.m1": "Tempo integral · 51–200 funcionários",
+      "wtl.pp.r2": "Contabilidade · Gerente", "wtl.pp.m2": "Tempo integral · 201–500 funcionários",
+      "wtl.pp.r3": "Administrativo · Júnior", "wtl.pp.m3": "Tempo integral · 10.001+ funcionários",
+      "wtl.pp.r4": "Recursos Humanos · Diretor(a)", "wtl.pp.m4": "Tempo integral · 10.001+ funcionários",
+      "wtl.pp.r5": "Recursos Humanos · Gerente", "wtl.pp.m5": "Tempo integral · 201–500 funcionários",
+      "wtl.pp.r6": "Recursos Humanos · Júnior", "wtl.pp.m6": "Tempo integral · 501–1000 funcionários",
+      "wtl.pp.r7": "Administrativo · Sênior", "wtl.pp.m7": "Tempo integral · 10.001+ funcionários",
+
+      "wtl.fi.head": "Resultados do protótipo",
+      "wtl.fi.pain": "Pain points",
+      "wtl.fi.pain1": "<strong>O popover multinível não é explorado.</strong> A maioria dos usuários parou no número de nível superior e nunca se aprofundou nos detalhes de proração, uma falsa sensação de conclusão.",
+      "wtl.fi.pain2": "<strong>A comparação entre períodos não funciona.</strong> Os usuários não conseguiram comparar facilmente jan vs. fev porque o layout não suporta uma visão lado a lado. Alguns desistiram; outros ficaram frustrados.",
+      "wtl.fi.delight": "Delights",
+      "wtl.fi.del1": "<strong>O layout gera confiança.</strong> A média de entendimento autoavaliado foi alta; mesmo usuários que perderam detalhes se sentiram capazes. A estrutura visual é tranquilizadora.",
+      "wtl.fi.del2": "<strong>A faixa de mensagem sobre proração funcionou bem.</strong> A maioria a notou e a achou valiosa.",
+      "wtl.fi.del3": "<strong>Os números de alocação foram encontráveis.</strong> 5 de 7 localizaram tanto a alocação de NY quanto o valor prorrateado, então a AI é descobrível no seu núcleo.",
+      "wtl.fi.sugg": "Sugestões",
+      "wtl.fi.sug1": "<strong>Adicionar uma pista visual.</strong> Uma affordance de \"Ver detalhes\" para que os usuários saibam que o número de nível superior é uma porta, não a resposta completa.",
+      "wtl.fi.sug2": "<strong>Adicionar uma visão de comparação entre períodos.</strong> O desejo mais forte dos usuários. Mesmo um simples comparativo lado a lado jan/fev ou um resumo \"O que mudou?\" resolveria a maior parte disso.",
+
+      "wtl.qa.head": "Respostas dos usuários · 7 participantes × 5 perguntas",
+      "wtl.qa.verbatim": "As respostas dos participantes são mostradas na íntegra (verbatim), no idioma original da sessão.",
+      "wtl.qa.na": "Sem resposta",
+      "wtl.qa.rn": "Nota da pesquisadora",
+      "wtl.qa.q1": "Localize o valor de alocação dos salários regulares (regular wages) na localização de New York (NY). Em seguida, identifique o valor prorrateado correspondente. Você conseguiu encontrar os dois valores? Descreva onde os encontrou e como os interpretou.",
+      "wtl.qa.rn1": "Os usuários não pareceram compreender ou explorar totalmente o popover multinível. Pareciam satisfeitos com o número geral e, por isso, perderam alguns detalhes cruciais de proração.",
+      "wtl.qa.q2": "Avalie seu entendimento do cálculo de alocações mostrado no protótipo.",
+      "wtl.qa.rn2": "Mesmo sem explorar totalmente os popovers, ainda se sentiram confiantes em suas respostas. O layout deu ao usuário uma sensação de confiança.",
+      "wtl.qa.q3": "Você conseguiu descobrir por que o valor total de imposto pode ter aumentado no período de fevereiro em comparação ao de janeiro?",
+      "wtl.qa.rn3": "Esta foi a pergunta mais divisiva. Alguns usuários não conseguiram entender totalmente o layout geral e, por isso, não exploraram as múltiplas páginas, o que gerou frustração. Eles manifestaram o desejo de uma forma mais fácil de comparar períodos.",
+      "wtl.qa.q4": "Quão confiante você está em validar os resultados de folha com base nesta tela?",
+      "wtl.qa.rn4": "Boa avaliação de confiança por parte dos usuários.",
+      "wtl.qa.q5": "Revise a explicação sobre proração. Com suas próprias palavras, explique o que significa e como se aplica especificamente neste cenário.",
+      "wtl.qa.rn5": "A maioria dos usuários notou a faixa de mensagem e a achou valiosa. Foi uma boa implementação.",
+
+      "wtl.ta.head": "Conclusões",
+      "wtl.ta.body": "O protótipo teve bom desempenho no geral: os usuários se sentiram confiantes ao navegar pela tela e responderam positivamente à faixa de mensagem de proração e ao layout geral. A maioria localizou os principais números de alocação sem orientação, então a arquitetura da informação é sólida no seu núcleo. As duas lacunas mais claras são profundidade e comparação: os usuários pararam em números de superfície sem perceber que havia mais detalhes nos popovers, e não conseguiram comparar janeiro vs. fevereiro porque o layout não suporta uma visão entre períodos. As principais oportunidades daqui para frente: sinalizar a profundidade dos popovers de forma mais explícita e introduzir uma comparação entre períodos, mesmo uma visão leve de \"o que mudou\" atenderia à necessidade mais recorrente.",
+
+      "wtl.wl.title": "O que aprendemos",
+      "wtl.wl.callout": "<strong>Os usuários manifestaram uma forte necessidade de visões comparativas das diferenças de folha e impostos entre localizações.</strong> Ver essas diferenças lado a lado melhoraria significativamente a clareza, a tomada de decisão e a confiança no sistema.",
+      "wtl.wl.p": "Esse achado deu ao time uma direção embasada em pesquisa para o recurso e validou uma abordagem para apresentar dados tributários complexos e baseados em localização de uma forma que os usuários realmente conseguem interpretar e confiar."
+    };
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

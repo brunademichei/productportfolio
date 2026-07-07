@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Case study: Minha Jornada, a centralized journey hub for AIESEC exchange participants and managers in Brazil." />
   <meta name="author" content="Bruna Demichei Nobre" />
-  <title>Minha Jornada platform · Bruna Demichei Nobre</title>
+  <title>Minha Jornada Platform · Bruna Demichei Nobre</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✦&lt;/text&gt;&lt;/svg&gt;" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
@@ -30,10 +30,15 @@
       </button>
 
       <ul class="nav__menu" id="nav-menu">
-        <li><a href="index.html#work">Case studies</a></li>
-        <li><a href="index.html#events">Creative events</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#work" data-i18n="nav.work">Case studies</a></li>
+        <li><a href="index.html#events" data-i18n="nav.events">Creative events</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        <li>
+          <button class="lang-toggle" id="lang-toggle" aria-label="Mudar para português" title="Português / English">
+            <span class="lang-toggle__label" id="lang-toggle-label">PT</span>
+          </button>
+        </li>
         <li>
           <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle theme">
             <span class="theme-toggle__icon" aria-hidden="true">◑</span>
@@ -45,31 +50,31 @@
 
   <main id="main">
     <div class="case-wrap">
-      <a class="case-back" href="index.html#work">← All case studies</a>
+      <a class="case-back" href="index.html#work" data-i18n="case.back">← All case studies</a>
 
       <header class="case-hero reveal">
-        <span class="case-hero__cat">Product design · Journey mapping</span>
-        <h1 class="case-hero__title">Minha Jornada platform</h1>
-        <p class="case-hero__lede">
+        <span class="case-hero__cat" data-i18n="mj.cat">Product design · Journey mapping</span>
+        <h1 class="case-hero__title" data-i18n="mj.title">Minha Jornada Platform</h1>
+        <p class="case-hero__lede" data-i18n="mj.lede">
           A centralized journey hub for AIESEC exchange participants and managers in Brazil, turning a
           fragmented operational process into a guided, transparent, end-to-end experience.
         </p>
         <dl class="case-meta">
-          <div><dt>My role</dt><dd>UX/UI design, journey mapping</dd></div>
-          <div><dt>Context</dt><dd>AIESEC in Brazil</dd></div>
-          <div><dt>Users</dt><dd>Exchange participants &amp; managers</dd></div>
-          <div><dt>Focus</dt><dd>IA, navigation, progress visibility</dd></div>
+          <div><dt data-i18n="meta.role">My role</dt><dd data-i18n="mj.m.role">UX/UI design, journey mapping</dd></div>
+          <div><dt data-i18n="mj.m.contextlbl">Context</dt><dd data-i18n="mj.m.context">AIESEC in Brazil</dd></div>
+          <div><dt data-i18n="mj.m.userslbl">Users</dt><dd data-i18n="mj.m.users">Exchange participants &amp; managers</dd></div>
+          <div><dt data-i18n="meta.focus">Focus</dt><dd data-i18n="mj.m.focus">IA, navigation, progress visibility</dd></div>
         </dl>
       </header>
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>Overview</h2>
-          <p>
-            The “Minha Jornada” platform was designed to improve the experience of exchange participants (EPs)
+          <h2 data-i18n="mj.ov.title">Overview</h2>
+          <p data-i18n="mj.ov.p1">
+            The "Minha Jornada" platform was designed to improve the experience of exchange participants (EPs)
             and managers throughout the AIESEC exchange journey within AIESEC in Brazil.
           </p>
-          <p>
+          <p data-i18n="mj.ov.p2">
             The primary challenge was the lack of visibility and structure across the end-to-end process.
             Participants often felt uncertain about their progress and next steps, while managers struggled to
             track engagement, communication, and overall journey status. Critical information was fragmented
@@ -81,14 +86,14 @@
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>The approach</h2>
-          <p>
+          <h2 data-i18n="mj.ap.title">The approach</h2>
+          <p data-i18n="mj.ap.p1">
             To address this, the platform was designed as a centralized journey hub, letting EPs and managers
             follow each stage of the exchange process in a more structured, transparent, and intuitive way. The
             experience focused on improving information architecture, simplifying navigation, and providing
             clearer progress visibility throughout the user journey.
           </p>
-          <p>
+          <p data-i18n="mj.ap.p2">
             My contribution focused on UX/UI design, journey mapping, and experience structuring, with a strong
             emphasis on usability and engagement. The goal was to transform a fragmented operational process
             into a guided, supportive experience, helping users feel informed, oriented, and connected
@@ -97,11 +102,93 @@
         </div>
       </section>
 
+      <!-- User flow -->
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2 data-i18n="mj.uf.title">User flow</h2>
+          <p data-i18n="mj.uf.intro">
+            Two roles, one journey hub. Everyone enters the same way, then the experience splits into a
+            participant path focused on progress and next steps, and a manager (CX) path focused on
+            oversight and what needs attention.
+          </p>
+        </div>
+
+        <figure class="userstory">
+          <blockquote data-i18n="mj.uf.story">
+            "As an exchange participant, I want to follow every step of my exchange in one place, so I always
+            know where I am and what to do next."
+          </blockquote>
+          <figcaption data-i18n="mj.uf.storycap">Primary user story</figcaption>
+        </figure>
+
+        <div class="flow" role="img" aria-label="User flow: shared entry through landing, role selection, and account creation, then a split into an exchange participant path and a manager CX path.">
+          <ol class="flow__lane flow__lane--shared">
+            <li class="flow__step">
+              <span class="flow__num">1</span>
+              <h3 data-i18n="mj.uf.s1t">Landing</h3>
+              <p data-i18n-html="mj.uf.s1d">"Cada passo é uma jornada", the value proposition and a clear <em>Começar minha jornada</em> call to action.</p>
+            </li>
+            <li class="flow__step">
+              <span class="flow__num">2</span>
+              <h3 data-i18n="mj.uf.s2t">Choose your role</h3>
+              <p data-i18n="mj.uf.s2d">"Quem é você na jornada?" The user identifies as an exchange participant or a member (CX).</p>
+            </li>
+            <li class="flow__step">
+              <span class="flow__num">3</span>
+              <h3 data-i18n="mj.uf.s3t">Create account</h3>
+              <p data-i18n="mj.uf.s3d">A short two-step sign up: identity first, then password and local committee.</p>
+            </li>
+          </ol>
+
+          <div class="flow__split" aria-hidden="true"><span data-i18n="mj.uf.split">the journey adapts to who you are</span></div>
+
+          <div class="flow__branches">
+            <ol class="flow__branch flow__branch--ep">
+              <li class="flow__branch-head" data-i18n="mj.uf.ep">Exchange participant</li>
+              <li class="flow__step">
+                <span class="flow__num">4</span>
+                <h3 data-i18n="mj.uf.ep4t">Personal journey dashboard</h3>
+                <p data-i18n="mj.uf.ep4d">A timeline of every exchange stage, so progress and the road ahead are always visible.</p>
+              </li>
+              <li class="flow__step">
+                <span class="flow__num">5</span>
+                <h3 data-i18n="mj.uf.ep5t">Current stage &amp; next steps</h3>
+                <p data-i18n="mj.uf.ep5d">The platform highlights what to do now and what unlocks next, removing the guesswork.</p>
+              </li>
+              <li class="flow__step">
+                <span class="flow__num">6</span>
+                <h3 data-i18n="mj.uf.ep6t">Documents &amp; support</h3>
+                <p data-i18n="mj.uf.ep6d">Send documents and reach AIESEC support without leaving the hub.</p>
+              </li>
+            </ol>
+
+            <ol class="flow__branch flow__branch--cx">
+              <li class="flow__branch-head" data-i18n="mj.uf.cx">Manager (CX)</li>
+              <li class="flow__step">
+                <span class="flow__num">4</span>
+                <h3 data-i18n="mj.uf.cx4t">CX dashboard</h3>
+                <p data-i18n="mj.uf.cx4d">The EP pipeline by journey stage, compliance progress, and the items needing attention.</p>
+              </li>
+              <li class="flow__step">
+                <span class="flow__num">5</span>
+                <h3 data-i18n="mj.uf.cx5t">EP panel</h3>
+                <p data-i18n="mj.uf.cx5d">Each participant's destination, current stage, and progress in a single, scannable list.</p>
+              </li>
+              <li class="flow__step">
+                <span class="flow__num">6</span>
+                <h3 data-i18n="mj.uf.cx6t">Act on what matters</h3>
+                <p data-i18n="mj.uf.cx6d">Follow up where engagement or compliance is at risk, keeping every journey on track.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
       <!-- High fidelity -->
       <section class="case-block reveal">
         <div class="prose">
-          <h2>High-fidelity design</h2>
-          <p>
+          <h2 data-i18n="mj.hf.title">High-fidelity design</h2>
+          <p data-i18n="mj.hf.p">
             The final design speaks to two audiences: a welcoming landing experience for participants and a
             focused operational cockpit for managers. The longer screens scroll inside their frames.
           </p>
@@ -110,27 +197,27 @@
         <div class="shots">
           <figure class="shot reveal">
             <div class="browser browser--scroll">
-              <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span><span class="scroll-hint">Scroll ↕</span></div>
+              <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span><span class="scroll-hint" data-i18n="scroll">Scroll ↕</span></div>
               <div class="browser__viewport"><img src="assets/cases/mj-landing-hifi.jpg" alt="High-fidelity landing page with the headline 'Cada passo é uma jornada', feature cards, testimonials, and a call to action" loading="lazy" /></div>
             </div>
-            <figcaption>Landing page: “Cada passo é uma jornada.” Scroll to explore the full page.</figcaption>
+            <figcaption data-i18n="mj.hf.cap1">Landing page: "Cada passo é uma jornada." Scroll to explore the full page.</figcaption>
           </figure>
 
           <div class="shots shots--two">
             <figure class="shot reveal">
               <div class="browser browser--scroll">
-                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint">Scroll ↕</span></div>
+                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint" data-i18n="scroll">Scroll ↕</span></div>
                 <div class="browser__viewport"><img src="assets/cases/mj-cx-dashboard.jpg" alt="Manager CX dashboard with compliance progress, EP pipeline by journey stage, and items needing attention" loading="lazy" /></div>
               </div>
-              <figcaption>Manager (CX) dashboard: pipeline, compliance, and what needs attention.</figcaption>
+              <figcaption data-i18n="mj.hf.cap2">Manager (CX) dashboard: pipeline, compliance, and what needs attention.</figcaption>
             </figure>
 
             <figure class="shot reveal">
               <div class="browser browser--scroll">
-                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint">Scroll ↕</span></div>
+                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint" data-i18n="scroll">Scroll ↕</span></div>
                 <div class="browser__viewport"><img src="assets/cases/mj-eps.jpg" alt="EP panel listing exchange participants with their destination, current journey stage, and progress" loading="lazy" /></div>
               </div>
-              <figcaption>EP panel: each participant's destination, current stage, and progress.</figcaption>
+              <figcaption data-i18n="mj.hf.cap3">EP panel: each participant's destination, current stage, and progress.</figcaption>
             </figure>
           </div>
 
@@ -140,7 +227,7 @@
                 <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
                 <div class="browser__viewport"><img src="assets/cases/mj-perfil.jpg" alt="Role selection screen asking 'Quem é você na jornada?' with Member and Exchange participant options" loading="lazy" /></div>
               </div>
-              <figcaption>Role selection: the journey adapts to who you are.</figcaption>
+              <figcaption data-i18n="mj.hf.cap4">Role selection: the journey adapts to who you are.</figcaption>
             </figure>
 
             <figure class="shot reveal">
@@ -148,7 +235,7 @@
                 <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
                 <div class="browser__viewport"><img src="assets/cases/mj-criar-conta.jpg" alt="Two-step account creation screen with password and local committee fields" loading="lazy" /></div>
               </div>
-              <figcaption>Account creation: a short, clear two-step sign-up.</figcaption>
+              <figcaption data-i18n="mj.hf.cap5">Account creation: a short, clear two-step sign-up.</figcaption>
             </figure>
           </div>
         </div>
@@ -157,8 +244,8 @@
       <!-- Low fidelity -->
       <section class="case-block reveal">
         <div class="prose">
-          <h2>From wireframes to high fidelity</h2>
-          <p>
+          <h2 data-i18n="mj.lf.title">From wireframes to high fidelity</h2>
+          <p data-i18n="mj.lf.p">
             The structure was defined first in low-fidelity, focusing on information architecture and flow
             before any visual styling.
           </p>
@@ -167,10 +254,10 @@
         <div class="shots">
           <figure class="shot reveal">
             <div class="browser browser--scroll">
-              <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span><span class="scroll-hint">Scroll ↕</span></div>
+              <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span><span class="scroll-hint" data-i18n="scroll">Scroll ↕</span></div>
               <div class="browser__viewport"><img src="assets/cases/mj-landing-lofi.jpg" alt="Low-fidelity wireframe of the landing page showing layout structure and content blocks" loading="lazy" /></div>
             </div>
-            <figcaption>Landing page wireframe: structure and content hierarchy first.</figcaption>
+            <figcaption data-i18n="mj.lf.cap1">Landing page wireframe: structure and content hierarchy first.</figcaption>
           </figure>
 
           <figure class="shot reveal">
@@ -178,16 +265,16 @@
               <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
               <div class="browser__viewport"><img src="assets/cases/mj-perfil-lofi.jpg" alt="Low-fidelity wireframe of the role selection screen with Intercambista and Manager CX options" loading="lazy" /></div>
             </div>
-            <figcaption>Role selection wireframe: defining the two access profiles early.</figcaption>
+            <figcaption data-i18n="mj.lf.cap2">Role selection wireframe: defining the two access profiles early.</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="case-cta reveal">
-        <h2 class="case-cta__title">Like what you see?</h2>
+        <h2 class="case-cta__title" data-i18n="cta.like">Like what you see?</h2>
         <div class="contact__actions">
-          <a class="btn btn--primary" href="index.html#contact">Get in touch</a>
-          <a class="btn btn--ghost" href="index.html#work">All case studies</a>
+          <a class="btn btn--primary" href="index.html#contact" data-i18n="cta.getintouch">Get in touch</a>
+          <a class="btn btn--ghost" href="index.html#work" data-i18n="cta.all">All case studies</a>
         </div>
       </section>
     </div>
@@ -196,11 +283,86 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p>© <span id="year"></span> Bruna Demichei Nobre</p>
-      <p class="site-footer__meta">UX Designer · Designed &amp; built with accessibility in mind.</p>
-      <a href="#top" class="site-footer__top">Back to top ↑</a>
+      <p class="site-footer__meta" data-i18n="footer.meta">UX Designer · Designed &amp; built with accessibility in mind.</p>
+      <a href="#top" class="site-footer__top" data-i18n="footer.top">Back to top ↑</a>
     </div>
   </footer>
 
+  <script>
+    window.PT = {
+      "skip": "Pular para o conteúdo",
+      "nav.work": "Cases",
+      "nav.events": "Eventos criativos",
+      "nav.about": "Sobre",
+      "nav.contact": "Contato",
+      "case.back": "← Todos os cases",
+      "meta.role": "Meu papel",
+      "meta.focus": "Foco",
+      "scroll": "Rolar ↕",
+      "cta.like": "Gostou do que viu?",
+      "cta.getintouch": "Entrar em contato",
+      "cta.all": "Todos os cases",
+      "footer.meta": "UX Designer · Desenhado &amp; construído com acessibilidade em mente.",
+      "footer.top": "Voltar ao topo ↑",
+
+      "mj.cat": "Design de produto · Mapeamento de jornada",
+      "mj.title": "Plataforma Minha Jornada",
+      "mj.lede": "Um hub central de jornada para participantes de intercâmbio e gestores da AIESEC no Brasil, transformando um processo operacional fragmentado em uma experiência guiada, transparente e de ponta a ponta.",
+      "mj.m.role": "Design UX/UI, mapeamento de jornada",
+      "mj.m.contextlbl": "Contexto",
+      "mj.m.context": "AIESEC no Brasil",
+      "mj.m.userslbl": "Usuários",
+      "mj.m.users": "Participantes de intercâmbio &amp; gestores",
+      "mj.m.focus": "AI, navegação, visibilidade de progresso",
+
+      "mj.ov.title": "Visão geral",
+      "mj.ov.p1": "A plataforma \"Minha Jornada\" foi desenhada para melhorar a experiência de participantes de intercâmbio (EPs) e gestores ao longo da jornada de intercâmbio dentro da AIESEC no Brasil.",
+      "mj.ov.p2": "O principal desafio era a falta de visibilidade e estrutura ao longo do processo de ponta a ponta. Os participantes muitas vezes se sentiam inseguros sobre seu progresso e próximos passos, enquanto os gestores tinham dificuldade em acompanhar engajamento, comunicação e o status geral da jornada. Informações críticas estavam fragmentadas entre planilhas, canais de chat e várias ferramentas, resultando em uma experiência desconectada e inconsistente.",
+
+      "mj.ap.title": "A abordagem",
+      "mj.ap.p1": "Para resolver isso, a plataforma foi desenhada como um hub central de jornada, permitindo que EPs e gestores acompanhassem cada etapa do processo de intercâmbio de forma mais estruturada, transparente e intuitiva. A experiência focou em melhorar a arquitetura da informação, simplificar a navegação e oferecer maior visibilidade do progresso ao longo da jornada do usuário.",
+      "mj.ap.p2": "Minha contribuição focou em design UX/UI, mapeamento de jornada e estruturação da experiência, com forte ênfase em usabilidade e engajamento. O objetivo era transformar um processo operacional fragmentado em uma experiência guiada e acolhedora, ajudando os usuários a se sentirem informados, orientados e conectados ao longo de todo o ciclo do intercâmbio.",
+
+      "mj.uf.title": "Fluxo do usuário",
+      "mj.uf.intro": "Dois perfis, um único hub de jornada. Todos entram da mesma forma e, então, a experiência se divide em um caminho do participante focado em progresso e próximos passos, e um caminho do gestor (CX) focado em acompanhamento e no que precisa de atenção.",
+      "mj.uf.story": "\"Como participante de intercâmbio, quero acompanhar cada etapa do meu intercâmbio em um só lugar, para sempre saber onde estou e o que fazer a seguir.\"",
+      "mj.uf.storycap": "User story principal",
+      "mj.uf.s1t": "Landing",
+      "mj.uf.s1d": "\"Cada passo é uma jornada\", a proposta de valor e um call to action claro <em>Começar minha jornada</em>.",
+      "mj.uf.s2t": "Escolha seu perfil",
+      "mj.uf.s2d": "\"Quem é você na jornada?\" O usuário se identifica como participante de intercâmbio ou membro (CX).",
+      "mj.uf.s3t": "Criar conta",
+      "mj.uf.s3d": "Um cadastro curto em duas etapas: identidade primeiro, depois senha e comitê local.",
+      "mj.uf.split": "a jornada se adapta a quem você é",
+      "mj.uf.ep": "Participante de intercâmbio",
+      "mj.uf.ep4t": "Painel pessoal da jornada",
+      "mj.uf.ep4d": "Uma linha do tempo de cada etapa do intercâmbio, para que o progresso e o caminho pela frente estejam sempre visíveis.",
+      "mj.uf.ep5t": "Etapa atual &amp; próximos passos",
+      "mj.uf.ep5d": "A plataforma destaca o que fazer agora e o que será liberado em seguida, eliminando as dúvidas.",
+      "mj.uf.ep6t": "Documentos &amp; suporte",
+      "mj.uf.ep6d": "Envie documentos e fale com o suporte da AIESEC sem sair do hub.",
+      "mj.uf.cx": "Gestor (CX)",
+      "mj.uf.cx4t": "Dashboard CX",
+      "mj.uf.cx4d": "O pipeline de EPs por etapa da jornada, o progresso de compliance e os itens que precisam de atenção.",
+      "mj.uf.cx5t": "Painel de EPs",
+      "mj.uf.cx5d": "O destino, a etapa atual e o progresso de cada participante em uma única lista fácil de escanear.",
+      "mj.uf.cx6t": "Agir no que importa",
+      "mj.uf.cx6d": "Fazer follow-up onde o engajamento ou o compliance está em risco, mantendo cada jornada no rumo certo.",
+
+      "mj.hf.title": "Design em alta fidelidade",
+      "mj.hf.p": "O design final fala com dois públicos: uma experiência de landing acolhedora para os participantes e um cockpit operacional focado para os gestores. As telas mais longas rolam dentro de suas molduras.",
+      "mj.hf.cap1": "Landing page: \"Cada passo é uma jornada.\" Role para explorar a página completa.",
+      "mj.hf.cap2": "Dashboard do gestor (CX): pipeline, compliance e o que precisa de atenção.",
+      "mj.hf.cap3": "Painel de EPs: o destino, a etapa atual e o progresso de cada participante.",
+      "mj.hf.cap4": "Seleção de perfil: a jornada se adapta a quem você é.",
+      "mj.hf.cap5": "Criação de conta: um cadastro curto e claro em duas etapas.",
+
+      "mj.lf.title": "Dos wireframes à alta fidelidade",
+      "mj.lf.p": "A estrutura foi definida primeiro em baixa fidelidade, focando na arquitetura da informação e no fluxo antes de qualquer estilização visual.",
+      "mj.lf.cap1": "Wireframe da landing page: estrutura e hierarquia de conteúdo primeiro.",
+      "mj.lf.cap2": "Wireframe da seleção de perfil: definindo os dois perfis de acesso desde cedo."
+    };
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

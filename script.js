@@ -8,6 +8,43 @@
 
   const root = document.documentElement;
   const THEME_KEY = "bdn-theme";
+  const LANG_KEY = "bdn-lang";
+
+  /* ---- Language (EN/PT) ---- */
+  // Each page defines its own translations in a global `window.PT` object,
+  // keyed by the element's data-i18n / data-i18n-html attribute value.
+  const PT = window.PT || {};
+  const langToggle = document.getElementById("lang-toggle");
+  const langLabel = document.getElementById("lang-toggle-label");
+  const enText = new Map();
+
+  function applyLang(lang) {
+    const toPt = lang === "pt";
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      const key = el.getAttribute("data-i18n");
+      if (!enText.has(el)) enText.set(el, el.textContent);
+      if (toPt && PT[key] != null) el.innerHTML = PT[key];
+      else el.textContent = enText.get(el);
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      const key = el.getAttribute("data-i18n-html");
+      if (!enText.has(el)) enText.set(el, el.innerHTML);
+      el.innerHTML = toPt && PT[key] != null ? PT[key] : enText.get(el);
+    });
+    root.setAttribute("lang", toPt ? "pt-BR" : "en");
+    if (langLabel) langLabel.textContent = toPt ? "EN" : "PT";
+    if (langToggle) langToggle.setAttribute("aria-label", toPt ? "Switch to English" : "Mudar para português");
+  }
+
+  applyLang(localStorage.getItem(LANG_KEY) || "en");
+
+  if (langToggle) {
+    langToggle.addEventListener("click", function () {
+      const next = root.getAttribute("lang") === "pt-BR" ? "en" : "pt";
+      applyLang(next);
+      localStorage.setItem(LANG_KEY, next);
+    });
+  }
 
   /* ---- Theme (light/dark) ---- */
   const themeToggle = document.getElementById("theme-toggle");
