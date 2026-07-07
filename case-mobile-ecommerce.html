@@ -133,12 +133,12 @@
               <div class="device__screen">
                 <span class="device__island" aria-hidden="true"></span>
                 <div class="app">
-                  <div class="app__status"><span>9:41</span><span>●●● ⌃ ▮</span></div>
+                  <div class="app__status"><span>9:41</span><span class="app__statusicons" aria-hidden="true"><svg width="47" height="12" viewBox="0 0 47 12"><rect x="0" y="6" width="2.4" height="4" rx="0.6" fill="#000"/><rect x="3.4" y="4.5" width="2.4" height="5.5" rx="0.6" fill="#000"/><rect x="6.8" y="3" width="2.4" height="7" rx="0.6" fill="#000"/><rect x="10.2" y="1.5" width="2.4" height="8.5" rx="0.6" fill="#000"/><path d="M23 3C20 3 17.5 4 15.7 5.7L17.2 7.2C18.7 5.8 20.8 5 23 5 25.2 5 27.3 5.8 28.8 7.2L30.3 5.7C28.5 4 26 3 23 3Z" fill="#000"/><path d="M23 6.4C21.4 6.4 20 7 18.9 8L23 12 27.1 8C26 7 24.6 6.4 23 6.4Z" fill="#000"/><rect x="34" y="2.5" width="10" height="6" rx="1.8" fill="#000"/><rect x="44.4" y="4" width="1.4" height="3" rx="0.7" fill="#000"/></svg></span></div>
                   <div class="app__scroll">
                     <div class="app__topbar">
                       <div>
                         <div class="app__hi" data-i18n="ec.app.hi">Welcome back</div>
-                        <div class="app__h1" data-i18n="ec.app.discover">Discover</div>
+                        <div class="app__largetitle" data-i18n="ec.app.discover">Discover</div>
                       </div>
                       <span class="app__avatar" aria-hidden="true"></span>
                     </div>
@@ -157,13 +157,20 @@
                     </div>
                     <div class="app__row"><b data-i18n="ec.app.popular">Popular</b><span data-i18n="ec.app.seeall">See all</span></div>
                     <div class="app__grid">
-                      <div class="app__card"><div class="app__thumb app__thumb--d"><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p1">Knit sweater</div><div class="app__pmeta" data-i18n="ec.app.p1m">Lumo Essentials</div><div class="app__price">$68</div></div>
-                      <div class="app__card"><div class="app__thumb app__thumb--b"><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p2">Leather tote</div><div class="app__pmeta" data-i18n="ec.app.p2m">Atelier</div><div class="app__price">$140</div></div>
-                      <div class="app__card"><div class="app__thumb app__thumb--a"><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p3">Ceramic mug</div><div class="app__pmeta" data-i18n="ec.app.p3m">Home</div><div class="app__price">$24</div></div>
-                      <div class="app__card"><div class="app__thumb app__thumb--c"><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p4">Linen shirt</div><div class="app__pmeta" data-i18n="ec.app.p4m">Lumo Essentials</div><div class="app__price">$54</div></div>
+                      <div class="app__card"><div class="app__thumb app__thumb--d"><svg class="app__art" viewBox="0 0 48 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="#000" d="M18 13C21 17 27 17 30 13L39 18 35.5 27 31 25 31 38C28 40 20 40 17 38L17 25 12.5 27 9 18Z"/><path stroke="#000" d="M20 13Q24 16.5 28 13"/></svg><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p1">Knit sweater</div><div class="app__pmeta" data-i18n="ec.app.p1m">Lumo Essentials</div><div class="app__price">$68</div></div>
+                      <div class="app__card"><div class="app__thumb app__thumb--b"><svg class="app__art" viewBox="0 0 48 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="#000" d="M13 19L35 19 33 39Q33 40 32 40L16 40Q15 40 15 39Z"/><path stroke="#000" d="M19 19Q19 12 24 12 29 12 29 19"/></svg><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p2">Leather tote</div><div class="app__pmeta" data-i18n="ec.app.p2m">Atelier</div><div class="app__price">$140</div></div>
+                      <div class="app__card"><div class="app__thumb app__thumb--a"><svg class="app__art" viewBox="0 0 48 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="#000" d="M15 18L31 18 29.5 38Q29.4 39 28.5 39L17.5 39Q16.6 39 16.5 38Z"/><path stroke="#000" d="M31 22Q38 22 38 28 38 33 30.5 33"/><path stroke="#000" d="M20 9Q22 12 20 15M26 9Q28 12 26 15"/></svg><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p3">Ceramic mug</div><div class="app__pmeta" data-i18n="ec.app.p3m">Home</div><div class="app__price">$24</div></div>
+                      <div class="app__card"><div class="app__thumb app__thumb--c"><svg class="app__art" viewBox="0 0 48 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="#000" d="M18 12L24 17 30 12 39 16 35 24 31 22 31 39 17 39 17 22 13 24 9 16Z"/><path stroke="#000" d="M24 17L24 38"/></svg><span class="app__heart" aria-hidden="true">♥</span></div><div class="app__pname" data-i18n="ec.app.p4">Linen shirt</div><div class="app__pmeta" data-i18n="ec.app.p4m">Lumo Essentials</div><div class="app__price">$54</div></div>
                     </div>
                   </div>
-                  <div class="app__tabbar"><span class="on" aria-hidden="true">⌂</span><span aria-hidden="true">⌕</span><span aria-hidden="true">♥</span><span aria-hidden="true">▤</span><span aria-hidden="true">◔</span></div>
+                  <div class="app__tabbar">
+                    <span class="app__tab app__tab--on"><svg viewBox="0 0 24 24" fill="none"><path stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 11L12 4 20 11M6 10V20H18V10"/></svg><span data-i18n="ec.tab.home">Home</span></span>
+                    <span class="app__tab"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="#000" stroke-width="1.8"/><path stroke="#000" stroke-width="1.8" stroke-linecap="round" d="M15 15L20 20"/></svg><span data-i18n="ec.tab.search">Search</span></span>
+                    <span class="app__tab"><svg viewBox="0 0 24 24" fill="none"><path stroke="#000" stroke-width="1.8" stroke-linejoin="round" d="M12 20C4 14 5 6.5 12 9 19 6.5 20 14 12 20Z"/></svg><span data-i18n="ec.tab.saved">Saved</span></span>
+                    <span class="app__tab"><svg viewBox="0 0 24 24" fill="none"><path stroke="#000" stroke-width="1.8" stroke-linejoin="round" d="M7 8H17L18 20H6Z"/><path stroke="#000" stroke-width="1.8" stroke-linecap="round" d="M9.5 8A2.5 2.5 0 0 1 14.5 8"/></svg><span data-i18n="ec.tab.bag">Bag</span></span>
+                    <span class="app__tab"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="#000" stroke-width="1.8"/><path stroke="#000" stroke-width="1.8" stroke-linecap="round" d="M5.5 19.5C5.5 15 18.5 15 18.5 19.5"/></svg><span data-i18n="ec.tab.you">You</span></span>
+                  </div>
+                  <div class="app__home" aria-hidden="true"></div>
                 </div>
               </div>
             </div>
@@ -176,9 +183,9 @@
               <div class="device__screen">
                 <span class="device__island" aria-hidden="true"></span>
                 <div class="app">
-                  <div class="app__status"><span>9:41</span><span>●●● ⌃ ▮</span></div>
+                  <div class="app__status"><span>9:41</span><span class="app__statusicons" aria-hidden="true"><svg width="47" height="12" viewBox="0 0 47 12"><rect x="0" y="6" width="2.4" height="4" rx="0.6" fill="#000"/><rect x="3.4" y="4.5" width="2.4" height="5.5" rx="0.6" fill="#000"/><rect x="6.8" y="3" width="2.4" height="7" rx="0.6" fill="#000"/><rect x="10.2" y="1.5" width="2.4" height="8.5" rx="0.6" fill="#000"/><path d="M23 3C20 3 17.5 4 15.7 5.7L17.2 7.2C18.7 5.8 20.8 5 23 5 25.2 5 27.3 5.8 28.8 7.2L30.3 5.7C28.5 4 26 3 23 3Z" fill="#000"/><path d="M23 6.4C21.4 6.4 20 7 18.9 8L23 12 27.1 8C26 7 24.6 6.4 23 6.4Z" fill="#000"/><rect x="34" y="2.5" width="10" height="6" rx="1.8" fill="#000"/><rect x="44.4" y="4" width="1.4" height="3" rx="0.7" fill="#000"/></svg></span></div>
                   <div class="app__scroll">
-                    <div class="app__hero app__thumb--d"><span class="app__back" aria-hidden="true">‹</span><span class="app__heart" aria-hidden="true">♥</span></div>
+                    <div class="app__hero app__thumb--d"><span class="app__back" aria-hidden="true">‹</span><span class="app__heart" aria-hidden="true">♥</span><svg class="app__art" viewBox="0 0 48 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="#000" d="M18 13C21 17 27 17 30 13L39 18 35.5 27 31 25 31 38C28 40 20 40 17 38L17 25 12.5 27 9 18Z"/><path stroke="#000" d="M20 13Q24 16.5 28 13"/></svg></div>
                     <div class="app__row" style="align-items:flex-start">
                       <div>
                         <div class="app__detail-h" data-i18n="ec.app.p1">Knit sweater</div>
@@ -187,6 +194,7 @@
                       <div class="app__bignum">$68</div>
                     </div>
                     <div class="app__stars" aria-hidden="true">★★★★☆ <span class="app__pmeta">4.6 (128)</span></div>
+                    <div class="app__segment" aria-hidden="true"><span class="on" data-i18n="ec.app.seg1">Details</span><span data-i18n="ec.app.seg2">Care</span><span data-i18n="ec.app.seg3">Shipping</span></div>
                     <div class="app__muted-line"></div>
                     <div class="app__muted-line" style="width:80%"></div>
                     <div class="app__pmeta" data-i18n="ec.app.sizelbl" style="margin-top:2px">Select size</div>
@@ -201,6 +209,7 @@
                     <span class="app__btn" data-i18n="ec.app.addbag">Add to bag · $68</span>
                     <span class="app__btn app__btn--ghost" aria-hidden="true">♥</span>
                   </div>
+                  <div class="app__home" aria-hidden="true"></div>
                 </div>
               </div>
             </div>
@@ -213,7 +222,7 @@
               <div class="device__screen">
                 <span class="device__island" aria-hidden="true"></span>
                 <div class="app">
-                  <div class="app__status"><span>9:41</span><span>●●● ⌃ ▮</span></div>
+                  <div class="app__status"><span>9:41</span><span class="app__statusicons" aria-hidden="true"><svg width="47" height="12" viewBox="0 0 47 12"><rect x="0" y="6" width="2.4" height="4" rx="0.6" fill="#000"/><rect x="3.4" y="4.5" width="2.4" height="5.5" rx="0.6" fill="#000"/><rect x="6.8" y="3" width="2.4" height="7" rx="0.6" fill="#000"/><rect x="10.2" y="1.5" width="2.4" height="8.5" rx="0.6" fill="#000"/><path d="M23 3C20 3 17.5 4 15.7 5.7L17.2 7.2C18.7 5.8 20.8 5 23 5 25.2 5 27.3 5.8 28.8 7.2L30.3 5.7C28.5 4 26 3 23 3Z" fill="#000"/><path d="M23 6.4C21.4 6.4 20 7 18.9 8L23 12 27.1 8C26 7 24.6 6.4 23 6.4Z" fill="#000"/><rect x="34" y="2.5" width="10" height="6" rx="1.8" fill="#000"/><rect x="44.4" y="4" width="1.4" height="3" rx="0.7" fill="#000"/></svg></span></div>
                   <div class="app__scroll">
                     <div class="app__topbar">
                       <span class="app__back" style="position:static;background:var(--app-card)" aria-hidden="true">‹</span>
@@ -221,13 +230,13 @@
                       <span style="width:26px"></span>
                     </div>
                     <div class="app__line">
-                      <span class="app__line-thumb app__thumb--d"></span>
+                      <span class="app__line-thumb app__thumb--d"><svg class="app__art" viewBox="0 0 48 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="#000" d="M18 13C21 17 27 17 30 13L39 18 35.5 27 31 25 31 38C28 40 20 40 17 38L17 25 12.5 27 9 18Z"/><path stroke="#000" d="M20 13Q24 16.5 28 13"/></svg></span>
                       <div class="app__line-info"><div class="app__pname" data-i18n="ec.app.p1">Knit sweater</div><div class="app__pmeta" data-i18n="ec.app.sizeM">Size M</div><div class="app__price">$68</div></div>
                       <div class="app__stepper"><span>−</span><b>1</b><span>+</span></div>
                     </div>
                     <div class="app__divider"></div>
                     <div class="app__line">
-                      <span class="app__line-thumb app__thumb--a"></span>
+                      <span class="app__line-thumb app__thumb--a"><svg class="app__art" viewBox="0 0 48 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="#000" d="M15 18L31 18 29.5 38Q29.4 39 28.5 39L17.5 39Q16.6 39 16.5 38Z"/><path stroke="#000" d="M31 22Q38 22 38 28 38 33 30.5 33"/><path stroke="#000" d="M20 9Q22 12 20 15M26 9Q28 12 26 15"/></svg></span>
                       <div class="app__line-info"><div class="app__pname" data-i18n="ec.app.p3">Ceramic mug</div><div class="app__pmeta" data-i18n="ec.app.p3m">Home</div><div class="app__price">$24</div></div>
                       <div class="app__stepper"><span>−</span><b>2</b><span>+</span></div>
                     </div>
@@ -240,6 +249,7 @@
                   <div class="app__bottombar">
                     <span class="app__btn" data-i18n="ec.app.checkout">Checkout</span>
                   </div>
+                  <div class="app__home" aria-hidden="true"></div>
                 </div>
               </div>
             </div>
@@ -282,6 +292,20 @@
             <h4 data-i18n="ec.ds.components">Components</h4>
             <p data-i18n="ec.ds.componentsp">Buttons, chips, product cards, list rows, steppers, tab bar — reusable and state-aware.</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Atomic design -->
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2 data-i18n="ec.atom.title">Atomic design in practice</h2>
+          <p data-i18n="ec.atom.p">I build the UI atomically: design tokens are the atoms, they combine into molecules, molecules into organisms, and organisms compose each screen. This keeps the system coherent, scalable, and easy to hand off.</p>
+        </div>
+        <div class="atomic reveal">
+          <div class="atomic__step"><span class="atomic__k" data-i18n="ec.atom.k1">Atoms</span><h4 data-i18n="ec.atom.h1">Tokens</h4><p data-i18n="ec.atom.d1">Color, type, spacing, radius, icons.</p><div class="atomic__tags"><span>color</span><span>type</span><span>space</span><span>icon</span></div></div>
+          <div class="atomic__step"><span class="atomic__k" data-i18n="ec.atom.k2">Molecules</span><h4 data-i18n="ec.atom.h2">Components</h4><p data-i18n="ec.atom.d2">Search field, chip, price, stepper.</p><div class="atomic__tags"><span>search</span><span>chip</span><span>stepper</span></div></div>
+          <div class="atomic__step"><span class="atomic__k" data-i18n="ec.atom.k3">Organisms</span><h4 data-i18n="ec.atom.h3">Patterns</h4><p data-i18n="ec.atom.d3">Product card, tab bar, order summary.</p><div class="atomic__tags"><span>card</span><span>tab&nbsp;bar</span><span>summary</span></div></div>
+          <div class="atomic__step"><span class="atomic__k" data-i18n="ec.atom.k4">Templates</span><h4 data-i18n="ec.atom.h4">Screens</h4><p data-i18n="ec.atom.d4">Discover, Product, Bag &amp; checkout.</p><div class="atomic__tags"><span>Discover</span><span>Product</span><span>Bag</span></div></div>
         </div>
       </section>
 
@@ -402,6 +426,16 @@
       "ec.ds.spacingp": "Grade de espaçamento de 4pt e raios de canto consistentes entre cards, chips e botões.",
       "ec.ds.components": "Componentes",
       "ec.ds.componentsp": "Botões, chips, cards de produto, linhas de lista, steppers, tab bar — reutilizáveis e cientes de estado.",
+
+      "ec.tab.home": "Início", "ec.tab.search": "Buscar", "ec.tab.saved": "Salvos", "ec.tab.bag": "Sacola", "ec.tab.you": "Você",
+      "ec.app.seg1": "Detalhes", "ec.app.seg2": "Cuidados", "ec.app.seg3": "Entrega",
+
+      "ec.atom.title": "Design atômico na prática",
+      "ec.atom.p": "Construo a UI de forma atômica: os design tokens são os átomos, que se combinam em moléculas, moléculas em organismos, e organismos compõem cada tela. Isso mantém o sistema coerente, escalável e fácil de fazer handoff.",
+      "ec.atom.k1": "Átomos", "ec.atom.h1": "Tokens", "ec.atom.d1": "Cor, tipografia, espaçamento, raio, ícones.",
+      "ec.atom.k2": "Moléculas", "ec.atom.h2": "Componentes", "ec.atom.d2": "Campo de busca, chip, preço, stepper.",
+      "ec.atom.k3": "Organismos", "ec.atom.h3": "Padrões", "ec.atom.d3": "Card de produto, tab bar, resumo do pedido.",
+      "ec.atom.k4": "Templates", "ec.atom.h4": "Telas", "ec.atom.d4": "Descobrir, Produto, Sacola &amp; checkout.",
 
       "ec.out.title": "Handoff &amp; validação",
       "ec.out.p1": "Para deixar o trabalho pronto para desenvolvimento, documento casos de uso e estados de cada componente, anoto espaçamento e comportamento e especifico os fluxos principais para que os desenvolvedores implementem sem adivinhação. Apresento as decisões aos stakeholders sustentadas pela lógica por trás delas, mantendo a mensagem clara e a direção defensável.",

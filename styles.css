@@ -1393,7 +1393,7 @@ a { color: inherit; }
 
 /* Cart / checkout */
 .app__line { display: flex; gap: 10px; align-items: center; }
-.app__line-thumb { width: 46px; height: 46px; border-radius: 11px; flex: none; }
+.app__line-thumb { width: 46px; height: 46px; border-radius: 11px; flex: none; position: relative; overflow: hidden; }
 .app__line-info { flex: 1; display: flex; flex-direction: column; gap: 3px; }
 .app__stepper { display: flex; align-items: center; gap: 8px; color: var(--app-soft); font-size: 12px; }
 .app__stepper b { color: var(--app-ink); }
@@ -1409,6 +1409,64 @@ a { color: inherit; }
   --app-line: #2a2933;
   --app-card: #201f28;
   --app-accent: #8c7cff;
+}
+
+/* ---- Product illustrations (so tiles show a product, not just color) ---- */
+.app__art { position: absolute; inset: 0; margin: auto; width: 58%; height: 58%; }
+.app__art path, .app__art rect, .app__art circle, .app__art line { stroke: rgba(255,255,255,0.92); }
+.app__hero .app__art { width: 46%; height: 46%; }
+.app__line-thumb .app__art, .device__screen .app__thumb .app__art { pointer-events: none; }
+
+/* ---- iOS status bar glyphs ---- */
+.app__statusicons { display: inline-flex; align-items: center; gap: 5px; }
+.app__statusicons svg { display: block; }
+.app__statusicons svg [fill] { fill: var(--app-ink); }
+
+/* ---- iOS tab bar with labels ---- */
+.app__tabbar { padding: 7px 10px 8px; gap: 2px; }
+.app__tab { display: flex; flex-direction: column; align-items: center; gap: 2px; flex: 1; color: var(--app-soft); }
+.app__tab svg { width: 20px; height: 20px; }
+.app__tab svg [stroke] { stroke: currentColor; }
+.app__tab span { font-size: 8px; font-weight: 600; }
+.app__tab--on { color: var(--app-accent); }
+
+/* ---- iOS home indicator ---- */
+.app__home { display: flex; justify-content: center; padding: 6px 0 8px; background: var(--app-bg); }
+.app__home::after { content: ""; width: 108px; height: 5px; border-radius: 3px; background: var(--app-ink); opacity: 0.85; }
+
+/* ---- iOS large title ---- */
+.app__largetitle { font-family: var(--font-display); font-weight: 800; font-size: 24px; line-height: 1.1; letter-spacing: -0.01em; }
+
+/* ---- iOS segmented control ---- */
+.app__segment { display: flex; background: var(--app-card); border-radius: 9px; padding: 2px; gap: 2px; }
+.app__segment span { flex: 1; text-align: center; font-size: 9px; font-weight: 600; padding: 5px 0; border-radius: 7px; color: var(--app-soft); }
+.app__segment .on { background: var(--app-bg); color: var(--app-ink); box-shadow: 0 1px 3px rgba(20,20,25,0.14); }
+
+/* ---- iOS nav bar (title + back) ---- */
+.app__navbar { display: flex; align-items: center; justify-content: space-between; padding-top: 4px; }
+.app__navbar .app__navtitle { font-family: var(--font-display); font-weight: 700; font-size: 15px; }
+.app__navbtn { width: 28px; height: 28px; border-radius: 50%; background: var(--app-card); display: grid; place-items: center; color: var(--app-ink); font-size: 13px; }
+
+/* ============================================================
+   Atomic design ladder
+   ============================================================ */
+.atomic { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; margin-top: 1.6rem; align-items: stretch; }
+.atomic__step { border: 1px solid var(--border); border-radius: 16px; padding: 1.1rem; background: var(--surface); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 0.6rem; position: relative; }
+.atomic__k { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
+.atomic__step h4 { font-family: var(--font-display); font-size: 1rem; margin: 0; }
+.atomic__step p { font-size: 0.85rem; color: var(--text-soft); margin: 0; }
+.atomic__tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: auto; }
+.atomic__tags span { font-size: 0.72rem; padding: 0.2rem 0.5rem; border-radius: 999px; background: var(--bg-alt); border: 1px solid var(--border); color: var(--text-muted); }
+.atomic__step:not(:last-child)::after {
+  content: "→"; position: absolute; right: -0.72rem; top: 50%; transform: translateY(-50%);
+  color: var(--text-muted); font-weight: 700; z-index: 2;
+}
+@media (max-width: 720px) {
+  .atomic { grid-template-columns: 1fr 1fr; }
+  .atomic__step:nth-child(2)::after, .atomic__step:not(:last-child)::after { content: none; }
+}
+@media (max-width: 460px) {
+  .atomic { grid-template-columns: 1fr; }
 }
 
 /* Design system / tokens strip */
