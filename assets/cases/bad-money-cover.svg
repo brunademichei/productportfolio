@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Discovery board cover with sticky notes and a scenario flow">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e2e0d6"/>
+    </pattern>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#14141a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="18" fill="#f7f6f1"/>
+  <rect width="800" height="500" rx="18" fill="url(#dots)"/>
+
+  <!-- top bar -->
+  <rect x="0" y="0" width="800" height="46" fill="#ffffff"/>
+  <rect x="22" y="17" width="270" height="12" rx="6" fill="#c9c8bf"/>
+  <rect x="726" y="14" width="16" height="16" rx="5" fill="#ffd23f"/>
+  <rect x="748" y="14" width="16" height="16" rx="5" fill="#ff8fab"/>
+  <rect x="770" y="14" width="16" height="16" rx="5" fill="#7cc6fe"/>
+
+  <!-- title -->
+  <text x="40" y="96" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700" fill="#2c2b24">Bad Money / Good Money</text>
+  <text x="40" y="122" font-family="Inter, Arial, sans-serif" font-size="15" fill="#7a796f">Cross-functional payroll discovery · devs · LPMs · UXDs</text>
+
+  <!-- scenario flow -->
+  <g filter="url(#sh)">
+    <rect x="40" y="150" width="150" height="78" rx="12" fill="#ffffff"/>
+    <rect x="240" y="150" width="150" height="78" rx="12" fill="#ffffff" stroke="#b79bff" stroke-width="2"/>
+    <rect x="440" y="150" width="150" height="78" rx="12" fill="#ffffff"/>
+    <rect x="640" y="150" width="120" height="78" rx="12" fill="#ffffff"/>
+  </g>
+  <rect x="52" y="162" width="28" height="20" rx="6" fill="#eeecff"/>
+  <text x="66" y="177" font-family="Inter" font-size="12" font-weight="700" fill="#5b4bff" text-anchor="middle">1</text>
+  <rect x="52" y="192" width="120" height="8" rx="4" fill="#ded" /><rect x="52" y="192" width="120" height="8" rx="4" fill="#e6e5db"/>
+  <rect x="52" y="206" width="86" height="8" rx="4" fill="#e6e5db"/>
+
+  <rect x="252" y="160" width="52" height="16" rx="8" fill="#874fff"/>
+  <text x="278" y="172" font-family="Inter" font-size="10" font-weight="800" fill="#fff" text-anchor="middle">RETRO</text>
+  <rect x="252" y="188" width="120" height="8" rx="4" fill="#e6e5db"/>
+  <rect x="252" y="202" width="96" height="8" rx="4" fill="#e6e5db"/>
+
+  <rect x="452" y="192" width="120" height="8" rx="4" fill="#e6e5db"/>
+  <rect x="452" y="206" width="70" height="8" rx="4" fill="#e6e5db"/>
+  <rect x="652" y="192" width="96" height="8" rx="4" fill="#e6e5db"/>
+  <rect x="652" y="206" width="60" height="8" rx="4" fill="#e6e5db"/>
+
+  <g fill="#b9b7a9" font-family="Arial" font-size="20" font-weight="700">
+    <text x="205" y="196">→</text><text x="405" y="196">→</text><text x="605" y="196">→</text>
+  </g>
+
+  <!-- sticky notes -->
+  <g filter="url(#sh)">
+    <rect x="44" y="276" width="176" height="118" rx="6" fill="#ffc7d4" transform="rotate(-2 132 335)"/>
+    <rect x="236" y="286" width="176" height="118" rx="6" fill="#c6f0cf" transform="rotate(1.5 324 345)"/>
+    <rect x="430" y="276" width="176" height="118" rx="6" fill="#e0d4ff" transform="rotate(-1 518 335)"/>
+    <rect x="622" y="286" width="138" height="118" rx="6" fill="#fff0a6" transform="rotate(2 691 345)"/>
+  </g>
+  <g font-family="Inter" font-size="11" font-weight="800" letter-spacing="0.06em">
+    <text x="60" y="300" fill="#b23a52" transform="rotate(-2 132 335)">QUESTION</text>
+    <text x="252" y="312" fill="#1f7a4d" transform="rotate(1.5 324 345)">AHA / ANSWER</text>
+    <text x="446" y="300" fill="#6a49b0" transform="rotate(-1 518 335)">EXPECTED</text>
+    <text x="636" y="312" fill="#9a7a00" transform="rotate(2 691 345)">USE CASES</text>
+  </g>
+  <g fill="rgba(20,20,25,0.28)">
+    <rect x="60" y="312" width="140" height="7" rx="3.5" transform="rotate(-2 132 335)"/>
+    <rect x="60" y="326" width="120" height="7" rx="3.5" transform="rotate(-2 132 335)"/>
+    <rect x="60" y="340" width="132" height="7" rx="3.5" transform="rotate(-2 132 335)"/>
+    <rect x="252" y="324" width="140" height="7" rx="3.5" transform="rotate(1.5 324 345)"/>
+    <rect x="252" y="338" width="112" height="7" rx="3.5" transform="rotate(1.5 324 345)"/>
+    <rect x="252" y="352" width="128" height="7" rx="3.5" transform="rotate(1.5 324 345)"/>
+    <rect x="446" y="312" width="140" height="7" rx="3.5" transform="rotate(-1 518 335)"/>
+    <rect x="446" y="326" width="120" height="7" rx="3.5" transform="rotate(-1 518 335)"/>
+    <rect x="446" y="340" width="134" height="7" rx="3.5" transform="rotate(-1 518 335)"/>
+    <rect x="636" y="324" width="104" height="7" rx="3.5" transform="rotate(2 691 345)"/>
+    <rect x="636" y="338" width="88" height="7" rx="3.5" transform="rotate(2 691 345)"/>
+    <rect x="636" y="352" width="98" height="7" rx="3.5" transform="rotate(2 691 345)"/>
+  </g>
+
+  <!-- phase chips -->
+  <g font-family="Inter" font-size="11" font-weight="800" fill="#fff">
+    <rect x="40" y="430" width="96" height="30" rx="8" fill="#5b4bff"/><text x="88" y="450" text-anchor="middle">PHASE 1</text>
+    <rect x="150" y="430" width="96" height="30" rx="8" fill="#2fb27c"/><text x="198" y="450" text-anchor="middle">PHASE 2</text>
+    <rect x="260" y="430" width="96" height="30" rx="8" fill="#f0a83f"/><text x="308" y="450" text-anchor="middle">PHASE 3</text>
+  </g>
+  <text x="372" y="450" font-family="Inter" font-size="13" fill="#7a796f">Phased delivery roadmap aligned with engineering</text>
+</svg>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case study: a cross-functional discovery session mapping negative and retroactive taxable-earnings scenarios in payroll, aligning developers, product managers, and designers on the expected behavior and a phased delivery." />
+  <meta name="author" content="Bruna Demichei Nobre" />
+  <title>Bad Money / Good Money · Payroll discovery · Bruna Demichei Nobre</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✦&lt;/text&gt;&lt;/svg&gt;" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="nav__brand" aria-label="Home · Bruna Demichei Nobre">
+        <span class="nav__mark" aria-hidden="true">✦</span>
+        <span class="nav__name">Bruna Demichei&nbsp;Nobre</span>
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="index.html#work" data-i18n="nav.work">Case studies</a></li>
+        <li><a href="index.html#events" data-i18n="nav.events">Creative events</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        <li>
+          <button class="lang-toggle" id="lang-toggle" aria-label="Mudar para português" title="Português / English">
+            <span class="lang-toggle__label" id="lang-toggle-label">PT</span>
+          </button>
+        </li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle theme">
+            <span class="theme-toggle__icon" aria-hidden="true">◑</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="case-wrap">
+      <a class="case-back" href="index.html#work" data-i18n="case.back">← All case studies</a>
+
+      <header class="case-hero reveal">
+        <span class="case-hero__cat" data-i18n="bm.cat">Cross-functional discovery · Payroll</span>
+        <h1 class="case-hero__title" data-i18n="bm.title">Bad Money / Good Money</h1>
+        <p class="case-hero__lede" data-i18n="bm.lede">
+          A cross-functional discovery session that untangled one of payroll's most confusing edge cases
+          (negative and retroactive taxable earnings) and aligned engineers, product managers, and designers on the
+          expected behavior and a phased plan to deliver it.
+        </p>
+        <dl class="case-meta">
+          <div><dt data-i18n="meta.role">My role</dt><dd data-i18n="bm.m.role">UX Designer &amp; facilitator</dd></div>
+          <div><dt data-i18n="bm.m.fmtlbl">Format</dt><dd data-i18n="bm.m.fmt">Discovery workshop (FigJam)</dd></div>
+          <div><dt data-i18n="bm.m.withlbl">With</dt><dd data-i18n="bm.m.with">Developers, product managers, designers</dd></div>
+          <div><dt data-i18n="meta.focus">Focus</dt><dd data-i18n="bm.m.focus">Systems thinking, scenario mapping, alignment</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2 data-i18n="bm.ov.title">Overview</h2>
+          <p data-i18n-html="bm.ov.p1">
+            "Bad money" is how the team refers to payroll scenarios that produce negative or retroactive
+            taxable earnings: an overpayment clawed back after a retroactive salary change, statutory
+            deductions calculated on money the employee never actually received, a negative "to&nbsp;be&nbsp;paid"
+            that reads like the employee owes the company. These are rare, high-stakes cases where the numbers
+            stop being intuitive.
+          </p>
+          <p data-i18n="bm.ov.p2">
+            I facilitated a discovery session with developers, product managers, and UX designers
+            to walk through a concrete scenario together, capture every open question, agree on the expected
+            behavior, and break the work into deliverable phases. The board below is the artifact we built
+            live during the session.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2 data-i18n="bm.ch.title">The challenge</h2>
+          <p data-i18n-html="bm.ch.p1">
+            Payroll is a domain where a single edge case can ripple across tax, arrears, and net pay. The
+            "bad money" cases were understood differently by each discipline, so before any UI could be
+            designed we needed a <strong>shared mental model</strong>: what the system <em>should</em> do,
+            where it currently misleads people, and which parts are design problems versus engineering rules.
+            My job was to make that complexity visible and get the whole triad (dev, product, and design)
+            aligned on the same picture.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2 data-i18n="bm.db.title">The discovery board</h2>
+          <p data-i18n="bm.db.p">
+            We mapped the problem on a single FigJam board: the participants, the use cases in scope, a
+            step-by-step walkthrough of a real scenario, the questions and answers raised around it, and the
+            phased plan we landed on.
+          </p>
+        </div>
+
+        <div class="board reveal" role="img" aria-label="FigJam discovery board for the Bad Money / Good Money payroll session, including participants, use cases in scope, a scenario walkthrough, questions, agreed behavior, expected behavior insights, a delivery roadmap, and the good money insight.">
+          <div class="board__bar">
+            <span class="board__bar-title" data-i18n="bm.board.title">Bad Money / Good Money · Payroll discovery</span>
+            <span class="board__bar-tools" aria-hidden="true">
+              <span class="board__tool"></span><span class="board__tool"></span><span class="board__tool"></span>
+            </span>
+          </div>
+
+          <div class="board__canvas">
+            <!-- Participants -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="bm.ppl.head">Who was in the room</h3>
+              <ul class="board__people">
+                <li class="person"><div class="person__top"><span class="person__avatar">1</span><span class="person__name" data-i18n="bm.p.dev1">Developer 1</span></div><span class="person__role" data-i18n="bm.p.eng">Engineering</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">2</span><span class="person__name" data-i18n="bm.p.dev2">Developer 2</span></div><span class="person__role" data-i18n="bm.p.eng">Engineering</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">3</span><span class="person__name" data-i18n="bm.p.dev3">Developer 3</span></div><span class="person__role" data-i18n="bm.p.eng">Engineering</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">P</span><span class="person__name" data-i18n="bm.p.pms">Product managers</span></div><span class="person__role" data-i18n="bm.p.pmr">Lead product managers</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">U</span><span class="person__name">UXDs</span></div><span class="person__role" data-i18n="bm.p.uxd">UX designers</span></li>
+              </ul>
+            </div>
+
+            <!-- Use cases -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="bm.uc.head">Use cases in scope</h3>
+              <p class="board__intro" data-i18n="bm.uc.intro">The negative taxable-earnings scenarios we needed the design and the rules to cover.</p>
+              <div class="board__row">
+                <div class="note note--white" data-i18n-html="bm.uc.1"><span class="note__label">Use case 1</span>Negative taxable earnings in the current period due to a retroactive overpayment that exceeds current-period taxable earnings, resulting in a negative net (overpayment) scenario.</div>
+                <div class="note note--white" data-i18n-html="bm.uc.2"><span class="note__label">Use case 2</span>Negative taxable earnings in the current period forwarded from a prior overpayment that has not yet been cleared.</div>
+                <div class="note note--white" data-i18n-html="bm.uc.3"><span class="note__label">Use case 3</span>Negative taxable earnings due to a retroactive change to a non-cash (not included in gross or net pay) taxable earning that exceeds current-period taxable earnings.</div>
+                <div class="note note--white" data-i18n-html="bm.uc.4"><span class="note__label">Use case 4</span>Negative taxable earnings due to a negative amount entered for a taxable earning.</div>
+                <div class="note note--white" data-i18n-html="bm.uc.5"><span class="note__label">Use case 5</span>Negative taxable earnings due to a negative amount entered for a taxable non-cash earning.</div>
+                <div class="note note--white" data-i18n-html="bm.uc.6"><span class="note__label">Use case 6</span>Negative taxable earnings due to a retroactive change to a taxable earning that creates a negative net, where the offset/clearing wage type does not carry the correct taxability of the original payment.</div>
+              </div>
+            </div>
+
+            <!-- Scenario walkthrough -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="bm.sc.head">The scenario we walked through</h3>
+              <p class="board__intro" data-i18n="bm.sc.intro">An employee on a 10k USD monthly base salary whose salary is retroactively cut, the classic "bad money" trigger.</p>
+              <div class="flow">
+                <div class="flow__step"><span class="flow__n">1</span><p data-i18n-html="bm.sc.s1">Employee with a monthly base salary of <strong>10k USD</strong>.</p></div>
+                <div class="flow__step"><span class="flow__n">2</span><p data-i18n="bm.sc.s2">Earns 10k USD in January 2026.</p></div>
+                <div class="flow__step"><span class="flow__n">3</span><p data-i18n="bm.sc.s3">Statutory deductions applied on the 10k USD base salary.</p></div>
+                <div class="flow__step flow__step--retro"><span class="flow__tag" data-i18n="bm.sc.retro">Retro</span><span class="flow__n">4</span><p data-i18n-html="bm.sc.s4">Salary decreased to <strong>2k USD</strong> in February, effective January 2026.</p></div>
+                <div class="flow__step flow__step--warn"><span class="flow__n">5</span><p data-i18n-html="bm.sc.s5"><strong>−8k USD in arrears</strong> due to the retroactive salary change.</p></div>
+                <div class="flow__step"><span class="flow__n">6</span><p data-i18n="bm.sc.s6">March salary processed on the 2k USD base salary.</p></div>
+                <div class="flow__step flow__step--warn"><span class="flow__n">7</span><p data-i18n="bm.sc.s7">Statutory deductions consider 6k gross, but the employee didn't effectively receive any amount.</p></div>
+                <div class="flow__step flow__step--fix"><span class="flow__n">8</span><p data-i18n-html="bm.sc.s8">In April, a 4k <strong>OTP</strong> (one-time payment) is generated to zero out the system.</p></div>
+              </div>
+            </div>
+
+            <!-- Questions / answers / insights -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="bm.qa.head">Questions, answers &amp; ahas</h3>
+              <div class="board__legend">
+                <span data-i18n-html="bm.qa.lg1"><i style="background:#ffc7d4"></i> Question / risk</span>
+                <span data-i18n-html="bm.qa.lg2"><i style="background:#c6f0cf"></i> Agreed behavior</span>
+                <span data-i18n-html="bm.qa.lg3"><i style="background:#e0d4ff"></i> Expected behavior / insight</span>
+              </div>
+              <div class="board__cols">
+                <div class="board__col board__col--pain">
+                  <span class="board__col-title" data-i18n="bm.qa.c1">Questions &amp; risks</span>
+                  <div class="note note--pink" data-i18n="bm.qa.p1">A negative "to be paid" gives the impression the employee has to pay 6k USD. In payroll a negative result could be a refund, not true for this scenario either.</div>
+                  <div class="note note--pink" data-i18n-html="bm.qa.p2">Statutory deductions on the 10k base salary were already paid; shouldn't the next pay periods be tax-free, or arrears be generated for statutory deductions?<span class="note__a"><b>A:</b> taxes aren't processed until the "to&nbsp;be&nbsp;paid" is positive.</span></div>
+                  <div class="note note--pink" data-i18n="bm.qa.p3">The one-time payment is treated as a supplemental payment, but this case likely needs a dedicated payroll calculation type.</div>
+                  <div class="note note--pink" data-i18n="bm.qa.p4">With a high pre-tax amount, how will it be calculated across regular and supplemental payments?</div>
+                  <div class="note note--pink" data-i18n-html="bm.qa.p5">Will there be UX deliverables for Phase&nbsp;1: a pay-statement footnote, an alert on the payroll dashboard? Any documentation for manually solving the issue?</div>
+                </div>
+
+                <div class="board__col board__col--ok">
+                  <span class="board__col-title" data-i18n="bm.qa.c2">Agreed behavior</span>
+                  <div class="note note--green" data-i18n="bm.qa.g1">Taxes shouldn't be processed while the "to be paid" is negative; statutory deductions should be 0.</div>
+                  <div class="note note--green" data-i18n="bm.qa.g2">Overpayments take higher priority than voluntary deductions (pre-tax / post-tax benefits) and would generate arrears depending on how the deductions are configured.</div>
+                </div>
+
+                <div class="board__col board__col--idea">
+                  <span class="board__col-title" data-i18n="bm.qa.c3">Expected behavior &amp; insights</span>
+                  <div class="note note--purple" data-i18n="bm.qa.i1">Expected: "to be paid" should be the 2k USD base salary minus deductions based on the 2k salary.</div>
+                  <div class="note note--purple" data-i18n="bm.qa.i2">Even with a negative net pay, the effective payout is 0 across all cases in the payments view.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Roadmap -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="bm.rm.head">Phased delivery of taxable-wage processing</h3>
+              <div class="phases">
+                <div class="phase"><span class="phase__tag" data-i18n="bm.rm.t1">Phase 1</span><p data-i18n="bm.rm.p1">Detect tax-engine errors and stop payroll with a clear alert.</p></div>
+                <div class="phase"><span class="phase__tag" data-i18n="bm.rm.t2">Phase 2</span><p data-i18n="bm.rm.p2">Handle cases with no positive cash (postponement).</p></div>
+                <div class="phase"><span class="phase__tag" data-i18n="bm.rm.t3">Phase 3</span><p data-i18n="bm.rm.p3">Process mixed positive and negative wages (retro amounts and period amounts together).</p></div>
+              </div>
+            </div>
+
+            <!-- Good money -->
+            <div class="board__group">
+              <h3 class="board__head" data-i18n="bm.gm.head">Good Money: the flip side</h3>
+              <div class="board__row">
+                <div class="note note--purple" data-i18n="bm.gm.note">"Good money" is the opposite scenario: higher taxable amounts (bonuses, gifts). The employee receives a separate amount and the taxables increase because of it, a useful mirror for pressure-testing the same logic in the positive direction.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2 data-i18n="bm.out.title">Outcome</h2>
+          <div class="callout">
+            <p data-i18n-html="bm.out.callout">
+              <strong>The session turned a fuzzy, discipline-specific problem into a shared, phased plan.</strong>
+              Engineers, product, and design left with the same mental model of how "bad money" should behave,
+              a prioritized set of open questions, and a three-phase roadmap to build against.
+            </p>
+          </div>
+          <p data-i18n-html="bm.out.p">
+            Just as importantly, the board surfaced the <em>design</em> questions early (where an alert,
+            a pay-statement footnote, or supporting documentation would be needed), so UX work
+            could start from a place of clarity instead of guesswork.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-cta reveal">
+        <h2 class="case-cta__title" data-i18n="cta.more">Want to see more?</h2>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="case-work-tax-location.html" data-i18n="cta.next">Next case study →</a>
+          <a class="btn btn--ghost" href="index.html#work" data-i18n="cta.all">All case studies</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© <span id="year"></span> Bruna Demichei Nobre</p>
+      <p class="site-footer__meta" data-i18n="footer.meta">Product Specialist · Designed &amp; built with accessibility in mind.</p>
+      <a href="#top" class="site-footer__top" data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    window.PT = {
+      "skip": "Pular para o conteúdo",
+      "nav.work": "Cases",
+      "nav.events": "Eventos criativos",
+      "nav.about": "Sobre",
+      "nav.contact": "Contato",
+      "case.back": "← Todos os cases",
+      "meta.role": "Meu papel",
+      "meta.focus": "Foco",
+      "cta.more": "Quer ver mais?",
+      "cta.next": "Próximo case →",
+      "cta.all": "Todos os cases",
+      "footer.meta": "Product Specialist · Desenhado &amp; construído com acessibilidade em mente.",
+      "footer.top": "Voltar ao topo ↑",
+
+      "bm.cat": "Discovery multifuncional · Folha de pagamento",
+      "bm.title": "Bad Money / Good Money",
+      "bm.lede": "Uma sessão de discovery multifuncional que desvendou um dos casos-limite mais confusos da folha de pagamento (valores tributáveis negativos e retroativos) e alinhou engenheiros, product managers e designers sobre o comportamento esperado e um plano faseado para entregá-lo.",
+      "bm.m.role": "UX Designer &amp; facilitadora",
+      "bm.m.fmtlbl": "Formato",
+      "bm.m.fmt": "Workshop de discovery (FigJam)",
+      "bm.m.withlbl": "Com",
+      "bm.m.with": "Desenvolvedores, product managers, designers",
+      "bm.m.focus": "Pensamento sistêmico, mapeamento de cenários, alinhamento",
+
+      "bm.ov.title": "Visão geral",
+      "bm.ov.p1": "\"Bad money\" é como o time se refere a cenários de folha que produzem valores tributáveis negativos ou retroativos: um pagamento a maior recuperado após uma mudança salarial retroativa, deduções obrigatórias calculadas sobre um dinheiro que o funcionário nunca recebeu de fato, um \"a&nbsp;pagar\" negativo que dá a impressão de que o funcionário deve para a empresa. São casos raros e de alto risco em que os números deixam de ser intuitivos.",
+      "bm.ov.p2": "Facilitei uma sessão de discovery com desenvolvedores, product managers e UX designers para percorrer juntos um cenário concreto, capturar cada dúvida em aberto, acordar o comportamento esperado e quebrar o trabalho em fases entregáveis. O board abaixo é o artefato que construímos ao vivo durante a sessão.",
+
+      "bm.ch.title": "O desafio",
+      "bm.ch.p1": "Folha de pagamento é um domínio em que um único caso-limite pode se propagar por imposto, arrears (valores em atraso) e pagamento líquido. Os casos de \"bad money\" eram entendidos de forma diferente por cada disciplina, então, antes de desenhar qualquer UI, precisávamos de um <strong>modelo mental compartilhado</strong>: o que o sistema <em>deveria</em> fazer, onde ele hoje induz as pessoas ao erro e quais partes são problemas de design versus regras de engenharia. Meu papel foi tornar essa complexidade visível e alinhar todo o trio (dev, produto e design) sobre a mesma imagem.",
+
+      "bm.db.title": "O board de discovery",
+      "bm.db.p": "Mapeamos o problema em um único board no FigJam: os participantes, os casos de uso no escopo, um passo a passo de um cenário real, as perguntas e respostas levantadas em torno dele e o plano faseado ao qual chegamos.",
+      "bm.board.title": "Bad Money / Good Money · Discovery de folha de pagamento",
+
+      "bm.ppl.head": "Quem estava na sala",
+      "bm.p.dev1": "Desenvolvedor(a) 1",
+      "bm.p.dev2": "Desenvolvedor(a) 2",
+      "bm.p.dev3": "Desenvolvedor(a) 3",
+      "bm.p.eng": "Engenharia",
+      "bm.p.pms": "Product managers",
+      "bm.p.pmr": "Lead product managers",
+      "bm.p.uxd": "UX designers",
+
+      "bm.uc.head": "Casos de uso no escopo",
+      "bm.uc.intro": "Os cenários de valores tributáveis negativos que o design e as regras precisavam cobrir.",
+      "bm.uc.1": "<span class=\"note__label\">Caso de uso 1</span>Valores tributáveis negativos no período atual devido a um pagamento a maior retroativo que excede os valores tributáveis do período atual, resultando em um cenário de líquido negativo (pagamento a maior).",
+      "bm.uc.2": "<span class=\"note__label\">Caso de uso 2</span>Valores tributáveis negativos no período atual transportados de um pagamento a maior anterior que ainda não foi compensado.",
+      "bm.uc.3": "<span class=\"note__label\">Caso de uso 3</span>Valores tributáveis negativos devido a uma mudança retroativa em um provento tributável não monetário (não incluído no bruto ou no líquido) que excede os valores tributáveis do período atual.",
+      "bm.uc.4": "<span class=\"note__label\">Caso de uso 4</span>Valores tributáveis negativos devido a um valor negativo inserido em um provento tributável.",
+      "bm.uc.5": "<span class=\"note__label\">Caso de uso 5</span>Valores tributáveis negativos devido a um valor negativo inserido em um provento tributável não monetário.",
+      "bm.uc.6": "<span class=\"note__label\">Caso de uso 6</span>Valores tributáveis negativos devido a uma mudança retroativa em um provento tributável que cria um líquido negativo, em que o tipo de salário de compensação/quitação não carrega a tributabilidade correta do pagamento original.",
+
+      "bm.sc.head": "O cenário que percorremos",
+      "bm.sc.intro": "Um funcionário com salário-base mensal de 10k USD cujo salário é reduzido retroativamente, o gatilho clássico de \"bad money\".",
+      "bm.sc.s1": "Funcionário com salário-base mensal de <strong>10k USD</strong>.",
+      "bm.sc.s2": "Recebe 10k USD em janeiro de 2026.",
+      "bm.sc.s3": "Deduções obrigatórias aplicadas sobre o salário-base de 10k USD.",
+      "bm.sc.retro": "Retro",
+      "bm.sc.s4": "Salário reduzido para <strong>2k USD</strong> em fevereiro, com efeito a partir de janeiro de 2026.",
+      "bm.sc.s5": "<strong>−8k USD em arrears</strong> devido à mudança salarial retroativa.",
+      "bm.sc.s6": "Salário de março processado sobre o salário-base de 2k USD.",
+      "bm.sc.s7": "As deduções obrigatórias consideram 6k de bruto, mas o funcionário não recebeu efetivamente nenhum valor.",
+      "bm.sc.s8": "Em abril, um <strong>OTP</strong> (pagamento único) de 4k é gerado para zerar o sistema.",
+
+      "bm.qa.head": "Perguntas, respostas &amp; insights",
+      "bm.qa.lg1": "<i style=\"background:#ffc7d4\"></i> Pergunta / risco",
+      "bm.qa.lg2": "<i style=\"background:#c6f0cf\"></i> Comportamento acordado",
+      "bm.qa.lg3": "<i style=\"background:#e0d4ff\"></i> Comportamento esperado / insight",
+      "bm.qa.c1": "Perguntas &amp; riscos",
+      "bm.qa.p1": "Um \"a pagar\" negativo dá a impressão de que o funcionário precisa pagar 6k USD. Na folha, um resultado negativo poderia ser um reembolso, o que também não é verdade neste cenário.",
+      "bm.qa.p2": "As deduções obrigatórias sobre o salário-base de 10k já foram pagas; os próximos períodos não deveriam ser isentos de imposto, ou deveriam ser gerados arrears para as deduções obrigatórias?<span class=\"note__a\"><b>R:</b> os impostos não são processados até que o \"a&nbsp;pagar\" seja positivo.</span>",
+      "bm.qa.p3": "O pagamento único é tratado como pagamento suplementar, mas este caso provavelmente precisa de um tipo de cálculo de folha dedicado.",
+      "bm.qa.p4": "Com um valor pré-imposto alto, como ele será calculado entre pagamentos regulares e suplementares?",
+      "bm.qa.p5": "Haverá entregáveis de UX para a Fase&nbsp;1: uma nota de rodapé no contracheque, um alerta no painel de folha? Alguma documentação para resolver o problema manualmente?",
+      "bm.qa.c2": "Comportamento acordado",
+      "bm.qa.g1": "Os impostos não devem ser processados enquanto o \"a pagar\" for negativo; as deduções obrigatórias devem ser 0.",
+      "bm.qa.g2": "Pagamentos a maior têm prioridade mais alta do que deduções voluntárias (benefícios pré/pós-imposto) e gerariam arrears dependendo de como as deduções estão configuradas.",
+      "bm.qa.c3": "Comportamento esperado &amp; insights",
+      "bm.qa.i1": "Esperado: o \"a pagar\" deveria ser o salário-base de 2k USD menos as deduções baseadas no salário de 2k.",
+      "bm.qa.i2": "Mesmo com um pagamento líquido negativo, o pagamento efetivo é 0 em todos os casos na visão de pagamentos.",
+
+      "bm.rm.head": "Entrega faseada do processamento de salários tributáveis",
+      "bm.rm.t1": "Fase 1",
+      "bm.rm.p1": "Detectar erros do motor tributário e parar a folha com um alerta claro.",
+      "bm.rm.t2": "Fase 2",
+      "bm.rm.p2": "Tratar casos sem caixa positivo (adiamento).",
+      "bm.rm.t3": "Fase 3",
+      "bm.rm.p3": "Processar salários positivos e negativos misturados (valores retroativos e do período juntos).",
+
+      "bm.gm.head": "Good Money: o outro lado",
+      "bm.gm.note": "\"Good money\" é o cenário oposto: valores tributáveis mais altos (bônus, gifts). O funcionário recebe um valor separado e os tributáveis aumentam por causa disso, um espelho útil para testar a mesma lógica na direção positiva.",
+
+      "bm.out.title": "Resultado",
+      "bm.out.callout": "<strong>A sessão transformou um problema difuso e específico de cada disciplina em um plano compartilhado e faseado.</strong> Engenharia, produto e design saíram com o mesmo modelo mental de como o \"bad money\" deve se comportar, um conjunto priorizado de perguntas em aberto e um roadmap de três fases para construir.",
+      "bm.out.p": "E, tão importante quanto, o board trouxe à tona as questões de <em>design</em> cedo (onde um alerta, uma nota de rodapé no contracheque ou documentação de apoio seriam necessários), para que o trabalho de UX pudesse partir de um lugar de clareza em vez de achismo."
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
